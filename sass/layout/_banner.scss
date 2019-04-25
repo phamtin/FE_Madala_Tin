@@ -1,0 +1,42 @@
+header {
+    height: 80vh;
+    background-image: url("../../asset/images/background-header.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.custom-jumbotron{
+    height: 75vh!important;
+    padding: 0!important;
+    background-color: rgb(241, 241, 241)!important;
+
+    &--woman{
+        
+        height: 75vh;
+    }
+
+    &--win-banner{
+        height: 35vh;
+    }
+}
+
+.content-banner{
+    &--green-vera{
+        width: 100%;
+    }
+
+    &--price{
+        font-size: 30px;
+        margin-bottom: 8px;
+        color: $green-primary!important;
+    }
+
+    &--des{
+        font-size: 15.5px;
+        color: rgb(148, 93, 102);
+        margin-bottom: 0;
+    }
+    &--buy{
+
+    }
+}
