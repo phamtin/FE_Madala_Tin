@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  width: 100%; }
+
+body {
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 16px; }
+
+.custom-nav {
+  height: 60px !important;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 2px rgba(128, 128, 128, 0.2);
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  opacity: .8; }
+  .custom-nav--logo {
+    height: 40px; }
+  .custom-nav--cart {
+    height: 18px; }
+  .custom-nav--list {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold; }
+    .custom-nav--list li a:hover {
+      color: #07be16 !important; }
+  .custom-nav--brand {
+    margin-right: 0; }
+
+.block4 {
+  position: relative; }
+  .block4--square2 {
+    position: absolute;
+    left: 30px; }
+
+.custom-card {
+  border: none !important; }
+  .custom-card--title {
+    font-size: 12px !important; }
+  .custom-card--text {
+    color: #6eb320; }
+
+.custom-input {
+  width: 100% !important; }
+
+.custom-btn {
+  border-radius: 0 !important;
+  border: 1px black solid !important; }
+
+header {
+  height: 80vh;
+  background-image: url("../../asset/images/background-header.jpg");
+  background-size: cover;
+  position: relative; }
+
+.custom-jumbotron {
+  height: 75vh !important;
+  padding: 0 !important;
+  background-color: #f1f1f1 !important; }
+  .custom-jumbotron--woman {
+    height: 75vh; }
+  .custom-jumbotron--win-banner {
+    height: 35vh; }
+
+.content-banner--green-vera {
+  width: 100%; }
+
+.content-banner--price {
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: #6eb320 !important; }
+
+.content-banner--des {
+  font-size: 15.5px;
+  color: #945d66;
+  margin-bottom: 0; }
+
+footer {
+  background-color: #2e2e2e;
+  padding: 40px 0; }
+  footer .text {
+    font-size: 14px;
+    line-height: 2.5; }
+    footer .text strong {
+      color: whitesmoke; }
+
+.block-product img {
+  width: 100%; }
+
+.review {
+  position: relative;
+  padding: 100px 0;
+  background-image: url("../../asset/images/bg-flower-client.png");
+  background-repeat: no-repeat;
+  background-position: 73%, 100%; }
+  .review--p {
+    color: black; }
+  .review--image {
+    clip-path: circle(); }
+  .review .custom-caption {
+    bottom: -5px !important; }
+
+.spbc {
+  padding: 90px 0;
+  background-color: white; }
+
+.information {
+  padding: 50px 0; }
+  .information--image {
+    width: 100%; }
+    .information--image--blog {
+      width: 100% !important; }
+  .information--p {
+    font-size: 14px;
+    text-align: start; }
+  .information--a {
+    font-size: 14px;
+    text-align: start;
+    display: inline-block; }

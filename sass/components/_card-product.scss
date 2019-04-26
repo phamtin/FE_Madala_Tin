@@ -1,0 +1,11 @@
+.custom-card{
+    border: none!important;
+
+    &--title{
+        font-size: 12px!important;
+    }
+
+    &--text{
+        color: $green-primary;
+    }
+}

@@ -1,0 +1,56 @@
+.block-product {
+
+    & img {
+        width: 100%;
+    }
+
+}
+
+.review {
+    position: relative;
+    padding: 100px 0;
+    background-image: url('../../asset/images/bg-flower-client.png');
+    background-repeat: no-repeat;
+    background-position: (73%, 100%);
+
+    &--p {
+        color: black;
+    }
+
+    &--image {
+        clip-path: circle();
+    }
+
+    & .custom-caption {
+        bottom: -5px !important;
+    }
+
+
+}
+
+.spbc{
+    padding: 90px 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.information{
+    padding: 50px 0;
+
+    &--image{
+        width: 100%;
+
+        &--blog{
+            width: 100%!important;
+        }
+    }
+    &--p{
+        font-size: 14px;
+        text-align: start;
+    }
+
+    &--a{
+        font-size: 14px;
+        text-align: start;
+        display: inline-block;
+    }
+}
