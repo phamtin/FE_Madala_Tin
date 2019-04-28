@@ -11,6 +11,14 @@ body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
   font-size: 16px; }
 
+.para {
+  color: #2c2c2c;
+  font-weight: 400; }
+  .para--text {
+    color: #6eb320; }
+  .para--page404 {
+    font-size: 20px; }
+
 .custom-nav {
   height: 60px !important;
   background-color: whitesmoke;
@@ -47,6 +55,12 @@ body {
 
 .custom-input {
   width: 100% !important; }
+  .custom-input--page404 {
+    border-radius: 100px;
+    width: 68%;
+    height: 35px;
+    border: 1px rgba(44, 44, 44, 0.5) solid;
+    padding: 0 20px; }
 
 .custom-btn {
   border-radius: 0 !important;
@@ -122,3 +136,16 @@ footer {
     font-size: 14px;
     text-align: start;
     display: inline-block; }
+
+.page-404 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.content-404 {
+  width: 100%;
+  height: 100%; }
+  .content-404--image {
+    width: 100%; }
