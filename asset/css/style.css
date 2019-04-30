@@ -169,10 +169,8 @@ footer {
     text-align: start;
     display: inline-block; }
 
-.aboutUs {
-  width: 100%;
-  min-height: 100%;
+.contactUs {
   position: relative;
-  padding-bottom: 400px; }
-  .aboutUs--img {
+  padding-bottom: 500px; }
+  .contactUs--img {
     width: 100%; }
