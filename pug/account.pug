@@ -1,11 +1,12 @@
+doctype html
 html(lang='en')
   head
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(http-equiv='X-UA-Compatible', content='ie=edge')
-    title Resgister
+    title Account
+    // Required meta tags
+    meta(charset='utf-8')
     link(rel='stylesheet', href='../../asset/css/style.css')
     link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin='anonymous')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     // Bootstrap CSS
     link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
   body
@@ -46,23 +47,58 @@ html(lang='en')
         .container
           .row
             li.breadcrumb-item
-              a(href='../pug/home.html') Home
+              a(href='../../pug/home.html') Home
             li.breadcrumb-item Đăng ký
-    .aboutUs
+    .account
       .container
         .row
-          .col-sm-2
-            h4.para VỀ CHÚNG TÔI
-      .container
-        .row
-          .col-md-6
-            img.aboutUs--img(src='../../asset/images/aboutUs.png')
-          .col-md-6
-            img(src='../../asset/images/logo.png')
-            h5.mt-4 GIỚI THIỆU CHUNG VỀ MỸ PHẨM MANDALA
-            p.para.para--about
-              | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt. Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
-            a(href='#') Xem thêm
+          .col-md-9
+            h4 TÀI KHOẢN
+            table.table.text-center.mt-4
+              thead
+                tr
+                  td Order
+                  td Date
+                  td TÌNH TRẠNG THANH TOÁN
+                  td TỔNG
+                  td NỢ
+              tbody
+               tr
+                - const ids0={'#1006': null, 'May 13, 2013': null,'đã thanh toán': 'tttt','350.000đ':null,' 0 ':null}
+                each key, value in ids0
+                    td(id = key)= value
+               tr
+                - const ids1={'#1006': null, 'May 13, 2013': null,'đã thanh toán': 'tttt','350.000đ':null,' 0 ':null}
+                each key, value in ids1
+                    td(id = key)= value
+               tr
+                - const ids2={'#1006': null, 'May 13, 2013': null,'đã thanh toán': 'tttt','350.000đ':null,' 0 ':null}
+                each key, value in ids2
+                    td(id = key)= value
+               tr
+                - const ids3={'#1006': null, 'May 13, 2013': null,'thanh toán 50%': 'tttt','350.000đ':null,' 275.000đ ':null}
+                each key, value in ids3
+                    td(id = key)= value
+          .col-8.col-md-3
+            h6.mt-2 CHI TIẾT TÀI KHOẢN
+            hr
+            .container
+              .row
+                .col-1.pl-0
+                  img(src='../../asset/images/profile-icon.png')
+                .col-11
+                  p#account-name GiangLe
+                  p leanhGiang@gmail.com
+              .row
+                .col-1.pl-0
+                  img(src='../../asset/images/checkin-icon.png')
+                .col-11
+                  p Tòa nhà Hanoi Center, group 402 Ba Đình, Hà Nội
+              .row
+                .col-1.pl-0
+                  img(src='../../asset/images/phone-icon.png')
+                .col-11
+                  p (08) 40157510
       footer
         .container
           .row
@@ -104,4 +140,9 @@ html(lang='en')
                 p.para.para--pay CopyRight@ 2015 - 2019 | Danang Sun-asterisk
               .col-6.col-md-3.offset-md-3
                 a(href='#')
-                  img.aboutUs--img(src='../../asset/images/pay.png')
+                  img.shoppingCart--img(src='../../asset/images/pay.png')
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')

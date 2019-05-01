@@ -1,5 +1,5 @@
-.custom-nav{
-    height: 60px!important;
+.custom-nav {
+    height: 60px !important;
     background-color: rgb(245, 245, 245);
     box-shadow: 0 1px 2px rgba(128, 128, 128, 0.2);
     position: absolute;
@@ -7,21 +7,23 @@
     z-index: 2;
     opacity: .8;
 
-    &--logo{
-        height: 40px;
+    &--logo {
+        height: $logo-small;
     }
-    &--cart{
+
+    &--cart {
         height: 18px;
     }
-    &--list{
-      text-transform: uppercase;
-      font-size: 11px;
-      font-weight: bold;
-      & li a:hover{
-        color: rgb(7, 190, 22)!important;
-      }
+
+    &--list {
+        @include nav-option;
+
+        & li a:hover {
+            color: rgb(7, 190, 22) !important;
+        }
     }
-    &--brand{
+
+    &--brand {
         margin-right: 0;
     }
 }
