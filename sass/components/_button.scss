@@ -1,4 +1,13 @@
-.custom-btn{
-    border-radius: 0!important;
-    border: 1px black solid!important;
+.custom-btn {
+    border-radius: 0 !important;
+    border: 1px $color-grey solid !important;
+    margin-bottom: 5px;
+    display: block;
+    &:hover {
+        background-color: $green-primary !important;
+    }
+    &--update{
+        background-color: $green-primary !important;
+    }
 }
+
