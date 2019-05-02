@@ -4,26 +4,32 @@
   box-sizing: border-box; }
 
 html {
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  font-size: 16px; }
+  @media (max-width: 992px) {
+    html {
+      font-size: 14.5px; } }
+  @media (max-width: 756px) {
+    html {
+      font-size: 13px; } }
+  @media (max-width: 576px) {
+    html {
+      font-size: 12px; } }
 
 body {
   width: 100%;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  font-size: 16px; }
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, sans-serif; }
 
 .para {
-  color: #242424;
+  color: #1d1d1d;
   font-weight: 400; }
-  .para--banner--des {
-    font-size: 15px;
-    color: #945d66;
-    margin-bottom: 0; }
-  .para--title {
-    font-size: 12px !important; }
-  .para--text {
-    color: #6eb320; }
   .para--pay {
     color: whitesmoke; }
+  .para--about {
+    color: #1d1d1d;
+    font-size: 14px; }
 
 .custom-nav {
   height: 60px !important;
@@ -65,7 +71,7 @@ body {
     border-radius: 100px;
     width: 68%;
     height: 35px;
-    border: 1px rgba(36, 36, 36, 0.5) solid;
+    border: 1px rgba(29, 29, 29, 0.5) solid;
     padding: 0 20px; }
 
 .custom-btn {
@@ -103,11 +109,14 @@ header {
   width: 65%; }
 
 footer {
-  background-color: #2e2e2e;
-  padding: 40px 0; }
+  background-color: #1d1d1d;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
   footer .text {
     font-size: 14px;
-    line-height: 2.5; }
+    line-height: 2.4; }
     footer .text strong {
       color: whitesmoke; }
 
@@ -159,3 +168,11 @@ footer {
     font-size: 14px;
     text-align: start;
     display: inline-block; }
+
+.aboutUs {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 400px; }
+  .aboutUs--img {
+    width: 100%; }

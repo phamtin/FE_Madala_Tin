@@ -48,36 +48,22 @@ html(lang='en')
             li.breadcrumb-item
               a(href='../pug/home.html') Home
             li.breadcrumb-item Đăng ký
-    .container
-      .row
-        .col-sm-2
-          h4.para ĐĂNG KÝ
-    .container
-      .row
-        .col-md-12
-          .wrap-form.mb-5
-            .form-group.custom-form
-              h6 THÔNG TIN CÁ NHÂN
-              label(for='') Tên trước*
-              input.form-control(type='text', name='', id='', aria-describedby='helpId')
-              label(for='') Tên sau*
-              input.form-control(type='text', name='', id='', aria-describedby='helpId')
-              label(for='') Email*
-              input.form-control(type='text', name='', id='', aria-describedby='helpId')
-              label(for='') Password*
-              input.form-control.mb-3(type='text', name='', id='', aria-describedby='helpId')
-              hr
-              h6 THÔNG TIN CÁ NHÂN
-              label(for='') Mật khẩu*
-              input.form-control(type='text', name='', id='', aria-describedby='helpId')
-              label(for='') Xác nhận mật khẩu*
-              input.form-control(type='text', name='', id='', aria-describedby='helpId')
-            .row
-              .col-sm-2.mr-auto
-                a.btn.btn-dark.custom-btn.pr-4.pl-4.mt-2(href='#', role='button') GỬI
-              .col-sm-2
-                a.btn.btn-dark.custom-btn.pr-4.pl-4.mt-2(href='#', role='button') ⇐ QUAY LẠI
-    footer
+    .aboutUs
+      .container
+        .row
+          .col-sm-2
+            h4.para VỀ CHÚNG TÔI
+      .container
+        .row
+          .col-md-6
+            img.aboutUs--img(src='../../asset/images/aboutUs.png')
+          .col-md-6
+            img(src='../../asset/images/logo.png')
+            h5.mt-4 GIỚI THIỆU CHUNG VỀ MỸ PHẨM MANDALA
+            p.para.para--about
+              | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt. Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+            a(href='#') Xem thêm
+      footer
         .container
           .row
             .col-md-4
@@ -118,4 +104,4 @@ html(lang='en')
                 p.para.para--pay CopyRight@ 2015 - 2019 | Danang Sun-asterisk
               .col-6.col-md-3.offset-md-3
                 a(href='#')
-                  img.shoppingCart--img(src='../../asset/images/pay.png')
+                  img.aboutUs--img(src='../../asset/images/pay.png')
