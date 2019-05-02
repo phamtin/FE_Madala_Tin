@@ -8,26 +8,16 @@
             color: rgb(148, 93, 102);
             margin-bottom: 0;
         }
-
-        &--price {
-            font-size: 30px;
-            color: $green-primary;
-        }
     }
 
-    &--title {
-        font-size: 12px !important;
+    &--title{
+        font-size: 12px!important;
     }
 
-    &--text {
+    &--text{
         color: $green-primary;
     }
-
-    &--pay {
+    &--pay{
         color: whitesmoke;
-
-        &--page404 {
-            font-size: 20px;
-        }
     }
 }
