@@ -2,7 +2,6 @@ header {
     height: 80vh;
     background-image: url("../../asset/images/background-header.jpg");
     background-size: cover;
-    position: relative;
 }
 
 .custom-jumbotron{
@@ -11,7 +10,6 @@ header {
     background-color: rgb(241, 241, 241)!important;
 
     &--woman{
-        
         height: 75vh;
     }
 
@@ -22,21 +20,9 @@ header {
 
 .content-banner{
     &--green-vera{
-        width: 100%;
-    }
-
-    &--price{
-        font-size: 30px;
-        margin-bottom: 8px;
-        color: $green-primary!important;
-    }
-
-    &--des{
-        font-size: 15.5px;
-        color: rgb(148, 93, 102);
-        margin-bottom: 0;
+        width: 65%;
     }
     &--buy{
-
+        // @include deco-a();
     }
 }

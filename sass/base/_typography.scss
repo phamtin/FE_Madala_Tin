@@ -2,10 +2,22 @@
     color: $color-black;
     font-weight: 400;
 
+    &--banner {
+        &--des {
+            font-size: 15px;
+            color: rgb(148, 93, 102);
+            margin-bottom: 0;
+        }
+    }
+
+    &--title{
+        font-size: 12px!important;
+    }
+
     &--text{
         color: $green-primary;
     }
-    &--page404{
-        font-size: 20px;
+    &--pay{
+        color: whitesmoke;
     }
 }
