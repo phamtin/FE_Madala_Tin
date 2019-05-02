@@ -1,10 +1,13 @@
 footer {
-    background-color: rgb(46, 46, 46);
-    padding: 40px 0;
+    background-color: $color-black;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
     .text {
         font-size: 14px;
-        line-height: 2.5;
+        line-height: 2.4;
 
         strong {
             color: whitesmoke;

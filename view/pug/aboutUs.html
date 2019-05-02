@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
-    <title>Shopping card</title>
-    <!-- Required meta tags-->
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../../asset/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Resgister</title>
+    <link rel="stylesheet" href="../../asset/css/style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light custom-nav">
-      <div class="container"><a class="navbar-brand custom-nav--brand" href="#"><img class="custom-nav--logo" src="../../asset/images/logo.png"></a>
+      <div class="container"><a class="navbar-brand custom-nav--brand" href="./pug/home.html"><img class="custom-nav--logo" src="../../asset/images/logo.png"/></a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav mx-auto mt-2 mt-lg-0 custom-nav--list">
@@ -37,61 +37,26 @@
       <ol class="breadcrumb custom-breadcrumb">
         <div class="container">
           <div class="row">
-            <li class="breadcrumb-item"><a href="./home.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Library</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Data</li>
+            <li class="breadcrumb-item"><a href="../pug/home.html">Home</a></li>
+            <li class="breadcrumb-item">Đăng ký</li>
           </div>
         </div>
       </ol>
     </nav>
-    <div class="shoppingCart">
+    <div class="aboutUs">
       <div class="container">
         <div class="row">
           <div class="col-sm-2">
-            <h4 class="para">GIỎ HÀNG</h4>
+            <h4 class="para">VỀ CHÚNG TÔI</h4>
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <table class="table text-center custom-table">
-              <thead class="custom-thead">
-                <tr>
-                  <th id="photo">ẢNH</th>
-                  <th id="name-product">TÊN SẢN PHẨM</th>
-                  <th id="price">GIÁ</th>
-                  <th id="number">SỐ LƯỢNG</th>
-                  <th id="sum">TỔNG SỐ</th>
-                  <th id="remove">XÓA</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td scope="row"><img src="../../asset/images/spc-1.png"></td>
-                  <td style="vertical-align:middle">Lắc tay D&G</td>
-                  <td style="vertical-align:middle"><strong>345.000đ</strong></td>
-                  <td style="vertical-align:middle">1</td>
-                  <td style="vertical-align:middle"><strong>345.000đ</strong></td>
-                  <td style="vertical-align:middle"><a href="#"><img src="../../asset/images/bin.png"></a></td>
-                </tr>
-                <tr class="custom-tr">
-                  <td style="vertical-align:middle" scope="row"><img src="../../asset/images/spc-1.png"></td>
-                  <td style="vertical-align:middle">Lắc tay D&G</td>
-                  <td style="vertical-align:middle"><strong>345.000đ</strong></td>
-                  <td style="vertical-align:middle">1</td>
-                  <td style="vertical-align:middle"><strong>345.000đ</strong></td>
-                  <td style="vertical-align:middle"><a href="#"><img src="../../asset/images/bin.png"></a></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 offset-md-8 mb-5">
-            <div class="option"><a class="btn btn-dark custom-btn custom-btn mr-1" href="#" role="button">TIẾP TỤC MUA HÀNG</a><a class="btn btn-dark custom-btn" href="#" role="button">XÓA</a><a class="btn btn-dark custom-btn custom-btn--update" href="#" role="button">CẬP NHẬT</a></div>
+          <div class="col-md-6"><img class="aboutUs--img" src="../../asset/images/aboutUs.png"/></div>
+          <div class="col-md-6"><img src="../../asset/images/logo.png"/>
+            <h5 class="mt-4">GIỚI THIỆU CHUNG VỀ MỸ PHẨM MANDALA</h5>
+            <p class="para para--about">Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt. Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.</p><a href="#">Xem thêm</a>
           </div>
         </div>
       </div>
@@ -144,21 +109,18 @@
             </div>
           </div>
         </div>
-        <hr>
+        <hr/>
         <div class="pay">
           <div class="container">
             <div class="row">
               <div class="col-sm-6">
                 <p class="para para--pay">CopyRight@ 2015 - 2019 | Danang Sun-asterisk</p>
               </div>
-              <div class="col-6 col-md-3 offset-md-3"><a href="#"><img class="shoppingCart--img" src="../../asset/images/pay.png"></a></div>
+              <div class="col-6 col-md-3 offset-md-3"><a href="#"><img class="aboutUs--img" src="../../asset/images/pay.png"/></a></div>
             </div>
           </div>
         </div>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

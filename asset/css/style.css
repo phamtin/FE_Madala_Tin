@@ -4,12 +4,32 @@
   box-sizing: border-box; }
 
 html {
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  font-size: 16px; }
+  @media (max-width: 992px) {
+    html {
+      font-size: 14.5px; } }
+  @media (max-width: 756px) {
+    html {
+      font-size: 13px; } }
+  @media (max-width: 576px) {
+    html {
+      font-size: 12px; } }
 
 body {
   width: 100%;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  font-size: 16px; }
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, sans-serif; }
+
+.para {
+  color: #1d1d1d;
+  font-weight: 400; }
+  .para--pay {
+    color: whitesmoke; }
+  .para--about {
+    color: #1d1d1d;
+    font-size: 14px; }
 
 .custom-nav {
   height: 60px !important;
@@ -47,16 +67,34 @@ body {
 
 .custom-input {
   width: 100% !important; }
+  .custom-input--page404 {
+    border-radius: 100px;
+    width: 68%;
+    height: 35px;
+    border: 1px rgba(29, 29, 29, 0.5) solid;
+    padding: 0 20px; }
 
 .custom-btn {
   border-radius: 0 !important;
-  border: 1px black solid !important; }
+  border: 1px #c9c9c9 solid !important;
+  margin-bottom: 5px;
+  display: block; }
+  .custom-btn:hover {
+    background-color: #6eb320 !important; }
+  .custom-btn--update {
+    background-color: #6eb320 !important; }
+
+.custom-breadcrumb {
+  background-color: transparent !important; }
+
+.custom-form {
+  background-color: #f7f7f7;
+  padding: 40px 60px; }
 
 header {
   height: 80vh;
   background-image: url("../../asset/images/background-header.jpg");
-  background-size: cover;
-  position: relative; }
+  background-size: cover; }
 
 .custom-jumbotron {
   height: 75vh !important;
@@ -68,51 +106,59 @@ header {
     height: 35vh; }
 
 .content-banner--green-vera {
-  width: 100%; }
-
-.content-banner--price {
-  font-size: 30px;
-  margin-bottom: 8px;
-  color: #6eb320 !important; }
-
-.content-banner--des {
-  font-size: 15.5px;
-  color: #945d66;
-  margin-bottom: 0; }
+  width: 65%; }
 
 footer {
-  background-color: #2e2e2e;
-  padding: 40px 0; }
+  background-color: #1d1d1d;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
   footer .text {
     font-size: 14px;
-    line-height: 2.5; }
+    line-height: 2.4; }
     footer .text strong {
       color: whitesmoke; }
 
-.block-product img {
-  width: 100%; }
+.block-product--block4 {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .block-product--block4--img2 {
+    position: absolute;
+    left: -12px;
+    width: 107% !important; }
+  .block-product--block4--img3 {
+    position: absolute;
+    left: 0px;
+    z-index: 2;
+    width: 107.5% !important; }
+  .block-product--block4--img4 {
+    position: absolute;
+    left: 6px;
+    z-index: 1;
+    width: 101.5% !important; }
 
 .review {
-  position: relative;
-  padding: 100px 0;
+  padding: 60px 0;
   background-image: url("../../asset/images/bg-flower-client.png");
   background-repeat: no-repeat;
-  background-position: 73%, 100%; }
-  .review--p {
-    color: black; }
+  background-position: 80%, 100%; }
   .review--image {
-    clip-path: circle(); }
+    clip-path: circle(50% at 50% 50%); }
   .review .custom-caption {
     bottom: -5px !important; }
 
 .spbc {
-  padding: 90px 0;
-  background-color: white; }
+  padding: 60px 0;
+  background-image: url("../../asset/images/bg-spbc.png"); }
 
 .information {
   padding: 50px 0; }
   .information--image {
     width: 100%; }
+    .information--image--spbc {
+      width: 60%; }
     .information--image--blog {
       width: 100% !important; }
   .information--p {
@@ -122,3 +168,11 @@ footer {
     font-size: 14px;
     text-align: start;
     display: inline-block; }
+
+.aboutUs {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 400px; }
+  .aboutUs--img {
+    width: 100%; }
