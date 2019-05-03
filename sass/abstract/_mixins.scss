@@ -6,6 +6,16 @@
     }
 }
 
+@mixin deco-a {
+    text-decoration: none;
+    color: $color-black;
+    display: inline-block;
+    &:hover{
+        text-decoration: none;
+        color: $green-primary;
+    }
+}
+
 @mixin fullsize {
     width: 100%;
 }

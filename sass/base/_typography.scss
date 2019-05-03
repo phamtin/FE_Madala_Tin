@@ -1,8 +1,12 @@
 .para {
     color: $color-black;
-    font-weight: 400;
 
     &--pay{
         color: whitesmoke;
+    }
+
+    &--detail{
+        font-size: $text-small;
+        color: lighten($color-black,20%);
     }
 }

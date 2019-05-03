@@ -3,10 +3,18 @@
     border: 1px $color-grey solid !important;
     margin-bottom: 5px;
     display: block;
+
     &:hover {
         background-color: $green-primary !important;
     }
-    &--update{
+
+    &--update {
         background-color: $green-primary !important;
+    }
+
+    &--detail {
+        border-radius: 15px !important;
+        border: 2px $color-grey solid !important;
+
     }
 }
