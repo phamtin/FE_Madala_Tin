@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Account</title>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../asset/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light custom-nav">
+      <div class="container"><a class="navbar-brand custom-nav--brand" href="./pug/home.html"><img class="custom-nav--logo" src="../../asset/images/logo.png"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0 custom-nav--list">
+            <li class="nav-item active"><a class="nav-link" href="#">Trang chủ<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="dropdownId" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId"><a class="dropdown-item" href="#">
+                  Action
+                  1</a><a class="dropdown-item" href="#">Action 2</a></div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Tin tức<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Bản đồ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+          </ul><i class="fas fa-shopping-cart custom-nav--cart mr-5 ml-5"></i>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-success my-2 my-sm-0 ml-auto" type="submit"></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb custom-breadcrumb">
+        <div class="container">
+          <div class="row">
+            <li class="breadcrumb-item"><a href="../../pug/home.html">Home</a></li>
+            <li class="breadcrumb-item">Đăng ký</li>
+          </div>
+        </div>
+      </ol>
+    </nav>
+    <div class="account">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <h4>TÀI KHOẢN</h4>
+            <table class="table text-center mt-4">
+              <thead>
+                <tr>
+                  <td>Order</td>
+                  <td>Date</td>
+                  <td>TÌNH TRẠNG THANH TOÁN</td>
+                  <td>TỔNG</td>
+                  <td>NỢ</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#1006</td>
+                  <td>May 13, 2013</td>
+                  <td id="tttt">đã thanh toán</td>
+                  <td>350.000đ</td>
+                  <td> 0 </td>
+                </tr>
+                <tr>
+                  <td>#1006</td>
+                  <td>May 13, 2013</td>
+                  <td id="tttt">đã thanh toán</td>
+                  <td>350.000đ</td>
+                  <td> 0 </td>
+                </tr>
+                <tr>
+                  <td>#1006</td>
+                  <td>May 13, 2013</td>
+                  <td id="tttt">đã thanh toán</td>
+                  <td>350.000đ</td>
+                  <td> 0 </td>
+                </tr>
+                <tr>
+                  <td>#1006</td>
+                  <td>May 13, 2013</td>
+                  <td id="tttt">thanh toán 50%</td>
+                  <td>350.000đ</td>
+                  <td> 275.000đ </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-8 col-md-3">
+            <h6 class="mt-2">CHI TIẾT TÀI KHOẢN</h6>
+            <hr>
+            <div class="container">
+              <div class="row">
+                <div class="col-1 pl-0"><img src="../../asset/images/profile-icon.png"></div>
+                <div class="col-11">
+                  <p id="account-name">GiangLe</p>
+                  <p>leanhGiang@gmail.com</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1 pl-0"><img src="../../asset/images/checkin-icon.png"></div>
+                <div class="col-11">
+                  <p>Tòa nhà Hanoi Center, group 402 Ba Đình, Hà Nội</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1 pl-0"><img src="../../asset/images/phone-icon.png"></div>
+                <div class="col-11">
+                  <p>(08) 40157510</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <ul class="text list-unstyled text-muted">
+                <li><strong>LIÊN HỆ VỚI CHÚNG TÔI</strong></li>
+                <li>tầng 4, tòa nhà Hanoi Group Số 442 Hàng Giấy, Quận Hoàn Kiếm, Thành phố Hà Nội</li>
+                <li>(04) 6674 2332 - (04) 5785 2015</li>
+                <li>(04) 6674 2332 - Tinphamtp@gmail.com</li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <ul class="text list-unstyled text-muted">
+                <li><strong>CHUYỂN HÀNG</strong></li>
+                <li>Mua sắm trực tuyến</li>
+                <li>Chính sách vận chuyển</li>
+                <li>Chính sách người dùng</li>
+                <li>Thông tin vận chuyển</li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <ul class="text list-unstyled text-muted">
+                <li><strong>HỖ TRỢ</strong></li>
+                <li>Our story</li>
+                <li>Thanh toán an toàn</li>
+                <li>Thanh toán nhanh</li>
+                <li>Chính sách vận chuyển</li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <ul class="text list-unstyled text-muted">
+                <li><strong>THÔNG TIN</strong></li>
+                <li>Về chúng tôi</li>
+                <li>Điều khoản &amp; điều kiện</li>
+                <li>Điều khoản &amp; yêu cầu</li>
+                <li>Đơn đặt hàng</li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <ul class="text list-unstyled text-muted">
+                <li><strong>MY ACCOUNT</strong></li>
+                <li>Giỏ hàng</li>
+                <li>Sản phẩm yêu thích</li>
+                <li>Sản phẩm thường xem</li>
+                <li>Kiểm tra</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="pay">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <p class="para para--pay">CopyRight@ 2015 - 2019 | Danang Sun-asterisk</p>
+              </div>
+              <div class="col-6 col-md-3 offset-md-3"><a href="#"><img class="shoppingCart--img" src="../../asset/images/pay.png"></a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Optional JavaScript-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

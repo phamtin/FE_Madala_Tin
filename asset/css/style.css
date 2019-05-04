@@ -27,9 +27,6 @@ body {
   font-weight: 400; }
   .para--pay {
     color: whitesmoke; }
-  .para--about {
-    color: #1d1d1d;
-    font-size: 14px; }
 
 .custom-nav {
   height: 60px !important;
@@ -169,8 +166,26 @@ footer {
     text-align: start;
     display: inline-block; }
 
-.contactUs {
+#account-name {
+  font-size: 30px;
+  margin-bottom: 0; }
+
+table,
+td,
+th {
+  border: 1px #d1d1d1 solid; }
+  table #tttt,
+  td #tttt,
+  th #tttt {
+    color: #bb0d0d; }
+  table thead,
+  td thead,
+  th thead {
+    background-color: #c9c9c9; }
+
+.account {
   position: relative;
-  padding-bottom: 500px; }
-  .contactUs--img {
+  min-height: 100%;
+  padding-bottom: 250px; }
+  .account--img {
     width: 100%; }
