@@ -1,0 +1,14 @@
+.detail{
+    &__deco-a{
+        @include deco-a;
+    }
+    &__img{
+        width: 100%;
+    }
+
+    @include respond(tab-port){
+        &__img{
+            width: 70%;
+        }
+    }
+}

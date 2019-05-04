@@ -20,13 +20,15 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Segoe UI', Tahoma, sans-serif; }
+  font-family: Tahoma; }
 
 .para {
-  color: #1d1d1d;
-  font-weight: 400; }
+  color: #1d1d1d; }
   .para--pay {
     color: whitesmoke; }
+  .para--detail {
+    font-size: 14px;
+    color: #505050; }
 
 .custom-nav {
   height: 60px !important;
@@ -70,6 +72,8 @@ body {
     height: 35px;
     border: 1px rgba(29, 29, 29, 0.5) solid;
     padding: 0 20px; }
+  .custom-input--detail {
+    width: 70% !important; }
 
 .custom-btn {
   border-radius: 0 !important;
@@ -80,6 +84,9 @@ body {
     background-color: #6eb320 !important; }
   .custom-btn--update {
     background-color: #6eb320 !important; }
+  .custom-btn--detail {
+    border-radius: 15px !important;
+    border: 2px #c9c9c9 solid !important; }
 
 .custom-breadcrumb {
   background-color: transparent !important; }
@@ -107,10 +114,7 @@ header {
 
 footer {
   background-color: #1d1d1d;
-  padding: 20px 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%; }
+  padding: 20px 0; }
   footer .text {
     font-size: 14px;
     line-height: 2.4; }
@@ -166,26 +170,17 @@ footer {
     text-align: start;
     display: inline-block; }
 
-#account-name {
-  font-size: 30px;
-  margin-bottom: 0; }
+.detail__deco-a {
+  text-decoration: none;
+  color: #1d1d1d;
+  display: inline-block; }
+  .detail__deco-a:hover {
+    text-decoration: none;
+    color: #6eb320; }
 
-table,
-td,
-th {
-  border: 1px #d1d1d1 solid; }
-  table #tttt,
-  td #tttt,
-  th #tttt {
-    color: #bb0d0d; }
-  table thead,
-  td thead,
-  th thead {
-    background-color: #c9c9c9; }
+.detail__img {
+  width: 100%; }
 
-.account {
-  position: relative;
-  min-height: 100%;
-  padding-bottom: 250px; }
-  .account--img {
-    width: 100%; }
+@media (max-width: 756px) {
+  .detail__img {
+    width: 70%; } }
