@@ -1,0 +1,16 @@
+.content-blog {
+    &--img {
+        width: 100%;
+    }
+}
+.last-article{
+    @include respond(tab-port){
+        display: none;
+    }
+}
+
+.second-article{
+    @include respond(phone){
+        display: none;
+    }
+}
