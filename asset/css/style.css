@@ -27,7 +27,6 @@ body {
   .para--pay {
     color: whitesmoke; }
   .para--detail {
-    font-size: 14px;
     color: #505050; }
 
 .custom-nav {
@@ -115,6 +114,8 @@ body {
   .custom-btn--detail {
     border-radius: 15px !important;
     border: 2px #c9c9c9 solid !important; }
+  .custom-btn--radius {
+    border-radius: 15px !important; }
 
 .custom-breadcrumb {
   background-color: transparent !important; }
@@ -145,6 +146,9 @@ footer {
     line-height: 2.4; }
     footer .text strong {
       color: whitesmoke; }
+
+.gird__img {
+  width: 100%; }
 
 .block-product--block4 {
   width: 100%;
