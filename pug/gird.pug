@@ -1,0 +1,240 @@
+doctype html
+html(lang='en')
+  head
+    title Gird
+    // Required meta tags
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='../../asset/css/style.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin='anonymous')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Bootstrap CSS
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+  body
+    nav.navbar.navbar-expand-md.navbar-light.bg-light.custom-nav
+      .container
+        a.navbar-brand.custom-nav--brand(href='./pug/home.html')
+          img.custom-nav--logo(src='../../asset/images/logo.png')
+        button.navbar-toggler.d-lg-none(type='button', data-toggle='collapse', data-target='#collapsibleNavId', aria-controls='collapsibleNavId', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #collapsibleNavId.collapse.navbar-collapse
+          ul.navbar-nav.mx-auto.mt-2.mt-lg-0.custom-nav--list
+            li.nav-item.active
+              a.nav-link(href='#')
+                | Trang chủ
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='#') Giới thiệu
+            li.nav-item.dropdown
+              a#dropdownId.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Sản phẩm
+              .dropdown-menu(aria-labelledby='dropdownId')
+                a.dropdown-item(href='#')
+                  | Action
+                  | 1
+                a.dropdown-item(href='#') Action 2
+            li.nav-item
+              a.nav-link(href='#')
+                | Tin tức
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='#') Bản đồ
+            li.nav-item
+              a.nav-link(href='#') Liên hệ
+          i.fas.fa-shopping-cart.custom-nav--cart.mr-5.ml-5
+          form.form-inline.my-2.my-lg-0
+            button.btn.btn-outline-success.my-2.my-sm-0.ml-auto(type='submit')
+    nav(aria-label='breadcrumb')
+      ol.breadcrumb.pb-0.custom-breadcrumb
+        .container
+          .row
+            li.breadcrumb-item
+              a(href='./home.html') Home
+            li.breadcrumb-item Sản phẩm
+            li.breadcrumb-item Trang sức
+    .gird
+      .container-fluid.d-none.d-sm-block
+        .row
+          .col-md-12.pl-0.pr-0.mb-5
+            a(href='#')
+              img.gird__img(src='../../asset/images/off50.png')
+      .container
+        .row
+          .col-md-3
+            .left
+              h6
+                i.fas.fa-bars.mr-2
+                | DANH MỤC SẢN PHẨM
+              hr
+              .row
+                .col-md-10
+                  a.gird__deco-a.mr-auto(href='#')
+                    strong  MỸ PHẨM
+                i.fas.fa-caret-right
+              .row
+                .col-md-10
+                  a.gird__deco-a.mr-auto(href='#')
+                    strong  TRANG SỨC
+                i.fas.fa-caret-down
+                ul.ml-5
+                  each info in ['Vòng tay', 'Nhẫn', 'Lắc chân', 'Phụ kiện khác', 'Giày thể thao']
+                    li= info
+              .row
+                .col-md-10
+                  a.gird__deco-a.mr-auto(href='#')
+                    strong  PHỤ KIỆN
+                i.fas.fa-caret-right
+              .row
+                .col-md-10
+                  a.gird__deco-a.mr-auto(href='#')
+                    strong  NƯỚC HOA
+                i.fas.fa-caret-right
+              br
+              .compare
+                .row
+                  .col-md-12
+                    h6 SO SÁNH SẢN PHẨM
+                    small Bạn chưa có sản phẩm nào để so sánh
+                    hr
+              .tag-sp
+                .row
+                  .col-md-10
+                    h6 TAG SẢN PHẨM
+                    hr
+                  br
+                .row
+                  .col-md-12
+                    each button in ['Hoa tai','Giày','Nước hoa','Áo sơ mi','Trẻ em', "Nhẫn",'Áo dự tiệc','Sport']
+                     a.btn.btn-light.mr-1.custom-btn(href='#')= button
+                .advertisement.mt-5.d-none.d-lg-block
+                  .row
+                    .col-md-10
+                      img(src='../../asset/images/gird-ad.png', alt='')
+          .col-md-9.ml-5.ml-sm-0
+            .right
+              .row
+                .col-3.mr-auto
+                  a(href='#')
+                    img(src='../../asset/images/grid1.png', alt='')
+                  a(href='#')
+                    img(src='../../asset/images/grid2.png', alt='')
+                .col-3
+                  a(href='#')  1
+                  a(href='#')  2
+                  a(href='#')  3
+              hr
+              .row.mt-4
+                .col-5.col-sm-3.offset-md-1.mr-4
+                  .gird__product
+                    .card.text-center.custom-card
+                      img.card-img-top(src='../../asset/images/spbc-3.png', alt='')
+                      .card-body
+                        small.text-muted
+                          strong  OHUI
+                        h6.card-title Mỹ phẩm Châu Âu
+                        img(src='../../asset/images/navbar-120k.png', alt='')
+                .col-5.col-sm-3.mr-4
+                  .gird__product
+                    .card.text-center.custom-card
+                      img.card-img-top(src='../../asset/images/spbc-2.png', alt='')
+                      .card-body
+                        small.text-muted
+                          strong  OHUI
+                        h6.card-title Mỹ phẩm Châu Âu
+                        img(src='../../asset/images/navbar-120k.png', alt='')
+                .col-5.col-sm-3
+                  .gird__product.d-none.d-sm-block
+                    .card.text-center.custom-card
+                      img.card-img-top(src='../../asset/images/spbc-1.png', alt='')
+                      .card-body
+                        small.text-muted
+                          strong  OHUI
+                        h6.card-title Mỹ phẩm Châu Âu
+                        img(src='../../asset/images/navbar-120k.png', alt='')
+              br
+              br
+              br
+              .row
+                .col-5.col-sm-3.offset-md-1.mr-4
+                  .gird__product
+                    .card.text-center.custom-card
+                      img.card-img-top(src='../../asset/images/spbc-2.png', alt='')
+                      .card-body
+                        small.text-muted
+                          strong  OHUI
+                        h6.card-title Mỹ phẩm Châu Âu
+                        img(src='../../asset/images/navbar-120k.png', alt='')
+                .col-5.col-sm-3.mr-4
+                  .gird__product
+                    .card.text-center.custom-card
+                      img.card-img-top(src='../../asset/images/spbc-1.png', alt='')
+                      .card-body
+                        small.text-muted
+                          strong  OHUI
+                        h6.card-title Mỹ phẩm Châu Âu
+                        img(src='../../asset/images/navbar-120k.png', alt='')
+                .col-5.col-sm-3
+                  .gird__product.d-none.d-sm-block
+                    .card.text-center.custom-card
+                      img.card-img-top(src='../../asset/images/spbc-3.png', alt='')
+                      .card-body
+                        small.text-muted
+                          strong  OHUI
+                        h6.card-title Mỹ phẩm Châu Âu
+                        img(src='../../asset/images/navbar-120k.png', alt='')
+              .row.mt-4
+                .col-3.mr-auto
+                  a(href='#')
+                    img(src='../../asset/images/grid1.png', alt='')
+                  a(href='#')
+                    img(src='../../asset/images/grid2.png', alt='')
+                .col-3
+                  a(href='#')  1
+                  a(href='#')  2
+                  a(href='#')  3
+              hr
+      footer
+        .container
+          .row
+            .col-md-4
+              ul.text.list-unstyled.text-muted
+                li
+                  strong LIÊN HỆ VỚI CHÚNG TÔI
+                each info in ['tầng 4, tòa nhà Hanoi Group Số 442 Hàng Giấy, Quận Hoàn Kiếm, Thành phố Hà Nội','(04) 6674 2332 - (04) 5785 2015','(04) 6674 2332 - Tinphamtp@gmail.com']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong CHUYỂN HÀNG
+                each info in ['Mua sắm trực tuyến','Chính sách vận chuyển','Chính sách người dùng','Thông tin vận chuyển']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong HỖ TRỢ
+                each info in ['Our story','Thanh toán an toàn','Thanh toán nhanh', 'Chính sách vận chuyển']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong THÔNG TIN
+                each info in ['Về chúng tôi','Điều khoản & điều kiện','Điều khoản & yêu cầu','Đơn đặt hàng']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong MY ACCOUNT
+                each info in ['Giỏ hàng','Sản phẩm yêu thích','Sản phẩm thường xem','Kiểm tra']
+                    li= info
+        hr
+        .pay
+          .container
+            .row
+              .col-sm-6
+                p.para.para--pay CopyRight@ 2015 - 2019 | Danang Sun-asterisk
+              .col-6.col-md-3.offset-md-3
+                a(href='#')
+                  img.gird__img(src='../../asset/images/pay.png')
+      // Optional JavaScript
+      // jQuery first, then Popper.js, then Bootstrap JS
+      script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+      script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
