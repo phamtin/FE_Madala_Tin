@@ -119,10 +119,6 @@ body {
 .custom-breadcrumb {
   background-color: transparent !important; }
 
-.custom-form {
-  background-color: #f7f7f7;
-  padding: 40px 60px; }
-
 header {
   height: 80vh;
   background-image: url("../../asset/images/background-header.jpg");
@@ -197,3 +193,14 @@ footer {
     font-size: 14px;
     text-align: start;
     display: inline-block; }
+
+.content-blog--img {
+  width: 100%; }
+
+@media (max-width: 756px) {
+  .last-article {
+    display: none; } }
+
+@media (max-width: 576px) {
+  .second-article {
+    display: none; } }

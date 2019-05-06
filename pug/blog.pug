@@ -1,0 +1,266 @@
+doctype html
+html(lang='en')
+  head
+    title Blog
+    // Required meta tags
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='../../asset/css/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin='anonymous')
+    // Bootstrap CSS
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+  body
+    main
+      nav.navbar.navbar-expand-md.navbar-light.bg-light.custom-nav
+        .container
+          a.navbar-brand.custom-nav--brand(href='#')
+            img.custom-nav--logo(src='../../asset/images/logo.png')
+          button.navbar-toggler.d-lg-none(type='button', data-toggle='collapse', data-target='#collapsibleNavId', aria-controls='collapsibleNavId', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #collapsibleNavId.collapse.navbar-collapse
+            ul.navbar-nav.mx-auto.mt-2.mt-lg-0.custom-nav--list
+              li.nav-item.active
+                a.nav-link(href='#')
+                  | Trang chủ
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href='#') Giới thiệu
+              li.nav-item.dropdown
+                a#dropdownId.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Sản phẩm
+                .dropdown-menu(aria-labelledby='dropdownId')
+              li.nav-item
+                a.nav-link(href='#')
+                  | Tin tức
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href='#') Bản đồ
+              li.nav-item
+                a.nav-link(href='#') Liên hệ
+            i.fas.fa-shopping-cart.custom-nav--cart.mr-5.ml-5
+            form.form-inline.my-2.my-lg-0
+              button.btn.btn-outline-success.my-2.my-sm-0.ml-auto(type='submit')
+      nav(aria-label='breadcrumb')
+        ol.breadcrumb.custom-breadcrumb
+          .container
+            .row.border-bottom.pb-3
+              li.breadcrumb-item
+                a(href='./home.html') Home
+              li.breadcrumb-item Blog
+      .container
+        .row
+          .col-sm-2.mt-2
+            h4 BLOG
+        .row
+          .col-2
+            a(href='')
+              img.mr-2(src='../../asset/images/grid1.png')
+            a(href='')
+              img(src='../../asset/images/grid2.png', alt='')
+          .col-2.col-sm-1.ml-auto.pr-0
+            a(href='#')  1
+            a(href='#')   2 
+            a(href='#')  3
+        hr
+      .content-blog
+        .container
+          .row
+            .col-sm-6.col-md-4
+              img.content-blog--img(src='../../asset/images/blog-1.png')
+              h6 REVIEW KEM BOUJOUR VELVET
+              hr
+              p.para
+                | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+                | cái Blog
+                | này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+              p.para.text-muted Bởi Nam Tran (12/5/2019)
+              hr
+              .row
+                .col-sm-6
+                  a.text-muted(href='#') đọc thêm
+                .col-sm-6.ml-auto
+                  p.para.text-muted 23 bình luận
+            .col-sm-6.col-md-4
+              .second-article
+                img.content-blog--img(src='../../asset/images/blog-2.png')
+                h6 REVIEW KEM BOUJOUR VELVET
+                hr
+                p.para
+                  | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+                  | cái Blog
+                  | này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+                p.para.text-muted Bởi Nam Tran (12/5/2019)
+                hr
+                .row
+                  .col-sm-6
+                    a.text-muted(href='#') đọc thêm
+                  .col-sm-6.ml-auto
+                    p.para.text-muted 23 bình luận
+            .col-sm-6.col-md-4
+              .last-article
+                img.content-blog--img(src='../../asset/images/blog-3.png')
+                h6 REVIEW KEM BOUJOUR VELVET
+                hr
+                p.para
+                  | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+                  | cái Blog
+                  | này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+                p.para.text-muted Bởi Nam Tran (12/5/2019)
+                hr
+                .row
+                  .col-sm-6
+                    a.text-muted(href='#') đọc thêm
+                  .col-sm-6.ml-auto
+                    p.para.text-muted 23 bình luận
+          .row
+            .col-sm-6.col-md-4
+              img.content-blog--img(src='../../asset/images/blog-1.png')
+              h6 REVIEW KEM BOUJOUR VELVET
+              hr
+              p.para
+                | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+                | cái Blog
+                | này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+              p.para.text-muted Bởi Nam Tran (12/5/2019)
+              hr
+              .row
+                .col-sm-6
+                  a.text-muted(href='#') đọc thêm
+                .col-sm-6.ml-auto
+                  p.para.text-muted 23 bình luận
+            .col-sm-6.col-md-4
+              .second-article
+                img.content-blog--img(src='../../asset/images/blog-1.png')
+                h6 REVIEW KEM BOUJOUR VELVET
+                hr
+                p.para
+                  | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+                  | cái Blog
+                  | này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+                p.para.text-muted Bởi Nam Tran (12/5/2019)
+                hr
+                .row
+                  .col-sm-6
+                    a.text-muted(href='#') đọc thêm
+                  .col-sm-6.ml-auto
+                    p.para.text-muted 23 bình luận
+            .col-sm-6.col-md-4
+              .last-article
+                img.content-blog--img(src='../../asset/images/blog-2.png')
+                h6 REVIEW KEM BOUJOUR VELVET
+                hr
+                p.para
+                  | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+                  | cái Blog
+                  | này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+                p.para.text-muted Bởi Nam Tran (12/5/2019)
+                hr
+                .row
+                  .col-sm-6
+                    a.text-muted(href='#') đọc thêm
+                  .col-sm-6.ml-auto
+                    p.para.text-muted 23 bình luận
+          .row
+            .col-sm-6.col-md-4
+              img.content-blog--img(src='../../asset/images/blog-3.png')
+              h6 REVIEW KEM BOUJOUR VELVET
+              hr
+              p.para
+                | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+                | cái Blog
+                | này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+              p.para.text-muted Bởi Nam Tran (12/5/2019)
+              hr
+              .row
+                .col-sm-6
+                  a.text-muted(href='#') đọc thêm
+                .col-sm-6.ml-auto
+                  p.para.text-muted 23 bình luận
+            .col-sm-6.col-md-4
+              .second-article
+                img.content-blog--img(src='../../asset/images/blog-1.png')
+                h6 REVIEW KEM BOUJOUR VELVET
+                hr
+                p.para
+                  | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+                  | cái Blog
+                  | này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+                p.para.text-muted Bởi Nam Tran (12/5/2019)
+                hr
+                .row
+                  .col-sm-6
+                    a.text-muted(href='#') đọc thêm
+                  .col-sm-6.ml-auto
+                    p.para.text-muted 23 bình luận
+            .col-sm-6.col-md-4
+              .last-article
+                img.content-blog--img(src='../../asset/images/blog-3.png')
+                h6 REVIEW KEM BOUJOUR VELVET
+                hr
+                p.para
+                  | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+                  | cái Blog
+                  | này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+                p.para.text-muted Bởi Nam Tran (12/5/2019)
+                hr
+                .row
+                  .col-sm-6
+                    a.text-muted(href='#') đọc thêm
+                  .col-sm-6.ml-auto
+                    p.para.text-muted 23 bình luận
+          .row.mb-4.mt-5
+            .col-2
+              a(href='')
+                img.mr-2(src='../../asset/images/grid1.png')
+              a(href='')
+                img(src='../../asset/images/grid2.png', alt='')
+            .col-2.col-sm-1.ml-auto.pr-0
+              a(href='#')  1
+              a(href='#')   2 
+              a(href='#')  3
+          hr
+    footer
+        .container
+          .row
+            .col-md-4
+              ul.text.list-unstyled.text-muted
+                li
+                  strong LIÊN HỆ VỚI CHÚNG TÔI
+                each info in ['tầng 4, tòa nhà Hanoi Group Số 442 Hàng Giấy, Quận Hoàn Kiếm, Thành phố Hà Nội','(04) 6674 2332 - (04) 5785 2015','(04) 6674 2332 - Tinphamtp@gmail.com']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong CHUYỂN HÀNG
+                each info in ['Mua sắm trực tuyến','Chính sách vận chuyển','Chính sách người dùng','Thông tin vận chuyển']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong HỖ TRỢ
+                each info in ['Our story','Thanh toán an toàn','Thanh toán nhanh', 'Chính sách vận chuyển']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong THÔNG TIN
+                each info in ['Về chúng tôi','Điều khoản & điều kiện','Điều khoản & yêu cầu','Đơn đặt hàng']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong MY ACCOUNT
+                each info in ['Giỏ hàng','Sản phẩm yêu thích','Sản phẩm thường xem','Kiểm tra']
+                    li= info
+        hr
+        .pay
+          .container
+            .row
+              .col-sm-6
+                p.para.para--pay CopyRight@ 2015 - 2019 | Danang Sun-asterisk
+              .col-6.col-md-3.offset-md-3
+                a(href='#')
+                  img.shoppingCart--img(src='../../asset/images/pay.png')
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
