@@ -5,7 +5,7 @@
     position: absolute;
     top: 0;
     z-index: 2;
-    opacity: .8;
+    opacity: 0.8;
 
     &--logo {
         height: $logo-small;
@@ -13,6 +13,7 @@
 
     &--cart {
         height: 18px;
+        color: $color-black;
     }
 
     &--list {

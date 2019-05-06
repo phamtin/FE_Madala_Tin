@@ -6,9 +6,9 @@
     }
 }
 
-@mixin deco-a {
+@mixin deco-a($color) {
     text-decoration: none;
-    color: $color-black;
+    color: $color;
     display: inline-block;
     &:hover{
         text-decoration: none;
