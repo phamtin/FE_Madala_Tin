@@ -23,12 +23,17 @@ body {
   font-family: Tahoma; }
 
 .para {
-  color: #1d1d1d; }
+  color: #1d1d1d;
+  font-weight: 400; }
   .para--pay {
     color: whitesmoke; }
   .para--detail {
     font-size: 14px;
     color: #505050; }
+  .para--text {
+    color: #6eb320; }
+  .para--page404 {
+    font-size: 20px; }
 
 .custom-nav {
   height: 60px !important;
