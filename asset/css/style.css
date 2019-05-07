@@ -138,7 +138,8 @@ header {
 
 footer {
   background-color: #1d1d1d;
-  padding: 20px 0; }
+  padding: 20px 0;
+  margin-top: 50px; }
   footer .text {
     font-size: 14px;
     line-height: 2.4; }
@@ -204,3 +205,23 @@ footer {
 @media (max-width: 576px) {
   .second-article {
     display: none; } }
+
+.gird__img {
+  width: 100%; }
+
+.gird__deco-a {
+  text-decoration: none;
+  color: #1d1d1d;
+  display: inline-block; }
+  .gird__deco-a:hover {
+    text-decoration: none;
+    color: #6eb320; }
+
+.gird__product {
+  cursor: pointer;
+  transition: 0.2s; }
+  .gird__product:hover {
+    transform: translateY(-4px);
+    border-bottom: 1px #6eb320 solid; }
+.blogDetail__img {
+  width: 100%; }
