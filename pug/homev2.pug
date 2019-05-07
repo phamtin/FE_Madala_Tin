@@ -1,0 +1,372 @@
+doctype html
+html(lang='en')
+  head
+    title HOME
+    // Required meta tags
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='../../asset/css/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin='anonymous')
+    // Bootstrap CSS
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+  body
+    header
+      nav.navbar.navbar-expand-md.navbar-light.bg-light.custom-nav
+        .container
+          a.navbar-brand.custom-nav--brand(href='#')
+            img.custom-nav--logo(src='../../asset/images/logo.png')
+          button.navbar-toggler.d-lg-none(type='button', data-toggle='collapse', data-target='#collapsibleNavId', aria-controls='collapsibleNavId', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #collapsibleNavId.collapse.navbar-collapse
+            ul.navbar-nav.mx-auto.mt-2.mt-lg-0.custom-nav--list
+              li.nav-item.active
+                a.nav-link(href='#')
+                  | Trang chủ
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href='#') Giới thiệu
+              li.nav-item.dropdown
+                a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                  | Sản
+                  | phẩm
+                .dropdown-menu.custom-dropdown-menu(aria-labelledby='navbarDropdown')
+                  .menu__item
+                    .menu__item--detail.mr-5
+                      h6 DƯỠNG DA
+                      hr
+                      ul.list-unstyled.text-muted.text-lowercase.font-weight-normal
+                        each item in ['Áo cánh/ áo sơ mi','Túi sách, balo','Khăn choàng cổ','Hats & Gloves','Vớ & socks','Jewerly','Bị bảo vệ','Giày thể thao']
+                          li
+                            a(href="#")= item
+                    .menu__item--detail.ml-5.mr-5
+                      h6 DƯỠNG TÓC
+                      hr
+                      ul.list-unstyled.text-muted.text-lowercase.font-weight-normal
+                        each item in ['Áo cánh/ áo sơ mi','Túi sách, balo','Khăn choàng cổ','Hats & Gloves','Vớ & socks','Jewerly','Bị bảo vệ','Giày thể thao']
+                          li
+                            a(href="#")= item
+                    .menu__item--detail.ml-5
+                      h6 DƯỠNG DA
+                      hr
+                      ul.list-unstyled.text-muted.text-lowercase.font-weight-normal
+                        each item in ['Áo khoác','Bộ áo liền quần','Dresses','Quần/ váy','Quần short','Quần jean','Đồ đan','Áo nhập khẩu']
+                          li
+                            a(href="#")= item
+              li.nav-item
+                a.nav-link(href='#')
+                  | Tin tức
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href='#') Bản đồ
+              li.nav-item
+                a.nav-link(href='#') Liên hệ
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                i.fas.fa-shopping-cart.custom-nav--cart.mr-5.ml-5.mb-4
+              .dropdown-menu.custom-dropdown-menu(aria-labelledby='navbarDropdown')
+                .menu__item.menu__item--shoppingcart
+                  .menu__item--detail.mb-4
+                    img.mr-3.float-left(src='../../asset/images/man-spc.png')
+                    p.float-left.mr-2.mb-1 Áo sơ mi nam
+                    i.fas.fa-times
+                    img.float-left(src='../../asset/images/navbar-120k.png')
+                  .menu__item--detail.mb-4
+                    img.mr-3.float-left(src='../../asset/images/man-spc.png')
+                    p.float-left.mr-2.mb-1 Áo sơ mi nam
+                    i.fas.fa-times
+                    img.float-left(src='../../asset/images/navbar-120k.png')
+                  hr
+                  p.float-left.mr-5 Tổng số
+                  figure
+                    strong  240.000 đ
+                  a.btn.btn-dark.custom-btn(name='', href='#', role='button') GIỎ HÀNG
+            form.form-inline.my-2.my-lg-0
+              i.fas.fa-search
+      .jumbotron.custom-jumbotron
+        .container
+          .row.mt-5.mt-sm-0.mt-md-3
+            .col-6.col-md-6
+              .row.pt-5.pt-md-3.pt-lg-0
+                .col-12.col-sm-6.offset-sm-3.offset-lg-3
+                  img.custom-jumbotron--win-banner(src='../../asset/images/win-banner.png')
+              .content-banner
+                .row
+                  .col-12.col-sm-12.text-center
+                    img.content-banner--green-vera(src='../../asset/images/green-vera.png')
+                    p.content-banner--des.mb-0
+                      | Sản phẩm tinh dầu dưỡng da mới nhất của
+                      | Madala
+                    p.content-banner--price GIÁ CHỈ 750.000đ
+                    a.content-banner--buy(href='#') MUA HÀNG
+            .col-6
+              img.custom-jumbotron--woman(src='../../asset/images/woman.png')
+    br
+    main
+      .container
+        .row.text-center
+          .col-sm-4.pt-1.pb-2.pb-md-5.pb-lg-0
+            .row
+              .col-2.offset-1.offset-sm-0.col-sm-12
+                img(src='../../asset/images/plane-icon.png', alt='')
+              .col-7.col-sm-12
+                p Miễn phí vận chuyển
+            hr
+          .col-sm-4.pt-1.pb-2.pb-md-5.pb-lg-0
+            .row
+              .col-2.offset-1.offset-sm-0.col-sm-12
+                img(src='../../asset/images/plane-icon.png', alt='')
+              .col-7.col-sm-12
+                p Nhận ngay quà tặng trị giá 350.000đ
+            hr
+          .col-sm-4.pt-1.pb-2.pb-md-5.pb-lg-0
+            .row
+              .col-2.offset-1.offset-sm-0.col-sm-12
+                img(src='../../asset/images/plane-icon.png', alt='')
+              .col-7.col-sm-12
+                p Giảm 20% cho đơn hàng trên 5.000.000đ
+            hr
+          //
+            <div class="col-sm-4 pt-1 pb-2 pb-md-5 text-center">
+            <img src="../../asset/images/plane-icon.png" alt="">
+            <p>Nhận ngay quà tặng trị giá 350.000đ</p>
+            </div>
+            <div class="col-sm-4 pt-1 pb-2 pb-md-5 text-center">
+            <img src="../../asset/images/plane-icon.png" alt="">
+            <p>Giảm 20% cho đơn hàng trên 5.000.000đ</p>
+            </div>
+      .block-product
+        .container
+          .row
+            .col-sm-6
+              .block4
+                .row.pb-2
+                  .col-6.px-sm-0
+                    img#block1(src='../../asset/images/square-1.png')
+                  .col-6.px-0
+                    img#block2.ml-n4.ml-sm-n1.ml-md-n2.ml-lg-n3(src='../../asset/images/square-2.png')
+                .row.pb-3.pb-sm-2
+                  .col-6.px-sm-0
+                    img#block3.block4--square-up(src='../../asset/images/square-3.png')
+                  .col-6.px-sm-0
+                    img#block4.block-product__img.ml-n4.ml-sm-2(src='../../asset/images/square-4.png')
+            .col-sm-6.pb-3.pb-sm-2
+              img#block5(src='../../asset/images/square-5.png')
+        .container
+          .row.mb-3
+            .col-sm-6.pl-3.pl-sm-0.pb-3
+              img#block6.block-product__big.ml-1.ml-sm-0(src='../../asset/images/square-6.png')
+            .col-sm-6
+              .block4
+                .row.pb-2
+                  .col-6.px-sm-0
+                    img#block7.ml-0.ml-sm-3(src='../../asset/images/square-7.png')
+                  .col-6.px-sm-0
+                    img#block8.block4--square-down.ml-n4.ml-sm-4(src='../../asset/images/square-8.png')
+                .row
+                  .col-6.px-sm-0
+                    img#block9.ml-sm-3(src='../../asset/images/square-9.png')
+                  .col-6.px-sm-0
+                    img#block10.ml-n5.ml-sm-2.ml-md-1(src='../../asset/images/square-10.png')
+      .review
+        .container
+          .row
+            .col-md-10
+              .content
+                #carouselId.carousel.slide(data-ride='carousel')
+                  ol.carousel-indicators
+                    li.active(data-target='#carouselId', data-slide-to='0')
+                    li(data-target='#carouselId', data-slide-to='1')
+                    li(data-target='#carouselId', data-slide-to='2')
+                  .carousel-inner(role='listbox')
+                    .carousel-item.active
+                      .row
+                        .col-sm-2
+                          img.review__image(src='../../asset/images/client-photo.png', alt='First slide')
+                        .col-sm-10
+                          .carousel-caption.text-left.ml-5.custom-caption
+                            p.para
+                              | “ Vẫn là vẻ bề ngoài vô cùng đơn giản với các
+                              | tông màu
+                              | trắng nhưng lại tạo ra sức hấp dẫn mạnh mẽ, với những công nghệ
+                              | được cải
+                              | tiến nhất. "
+                              br
+                              strong - Bill Gate -
+                    .carousel-item
+                      .container
+                        .row
+                          .col-sm-2
+                            img.review__image(src='../../asset/images/client-photo.png', alt='First slide')
+                          .col-sm-10
+                            .carousel-caption.text-left.ml-5.custom-caption
+                              p.para
+                                | “ Vẫn là vẻ bề ngoài vô cùng đơn giản với các
+                                | tông màu
+                                | trắng nhưng lại tạo ra sức hấp dẫn mạnh mẽ, với những công
+                                | nghệ
+                                | được cải
+                                | tiến nhất. "
+                                br
+                                strong - Bill Gate -
+                  a.carousel-control-prev(href='#carouselId', role='button', data-slide='prev')
+                    span.carousel-control-prev-icon(aria-hidden='true')
+                    span.sr-only Previous
+                  a.carousel-control-next(href='#carouselId', role='button', data-slide='next')
+                    span.carousel-control-next-icon(aria-hidden='true')
+                    span.sr-only Next
+      .spbc
+        .container
+          .row
+            .col-sm-8.col-md-4.offset-sm-2.offset-md-4.text-center
+              img.block-product__img(src='../../asset/images/text-spbc.png')
+          .row.mt-5.mb-5.pl-5.pl-sm-0
+            .col-6.col-sm-2
+              a(href='') Mỹ phẩm
+            .col-6.col-sm-2
+              a(href='') Quần áo
+            .col-6.col-sm-2
+              a(href='') Giày Sport
+            .col-6.col-sm-2
+              a(href='') Trang sức
+            .col-6.col-sm-2
+              a(href='') Nhẫn
+            .col-6.col-sm-2
+              a(href='') Heathy
+          .row
+            .col-md-12
+              .card-deck.text-center
+                .card.custom-card.mr-5
+                  img.card-img-top.mx-auto(style='width:60%', src='../../asset/images/spbc-3.png')
+                  .card-body
+                    p.card-title.custom-card--title
+                      strong Mỹ phẩm châu Âu
+                    p.card-text.custom-card--text 355.000đ
+                .card.custom-card.mr-5
+                  img.card-img-top.mx-auto(style='width:60%', src='../../asset/images/spbc-4.png')
+                  .card-body
+                    p.card-title.custom-card--title
+                      strong Mỹ phẩm châu Âu
+                    p.card-text.custom-card--text 355.000đ
+                .card.custom-card.mr-5.d-none.d-md-block
+                  img.card-img-top.mx-auto(style='width:60%', src='../../asset/images/spbc-1.png')
+                  .card-body
+                    p.card-title.custom-card--title
+                      strong Mỹ phẩm châu Âu
+                    p.card-text.custom-card--text 355.000đ
+                .card.custom-card.mr-5.d-none.d-md-block
+                  img.card-img-top.mx-auto(style='width:60%', src='../../asset/images/spbc-2.png')
+                  .card-body
+                    p.card-title.custom-card--title
+                      strong Mỹ phẩm châu Âu
+                    p.card-text.custom-card--text 355.000đ
+      .channel
+        .container
+          .row.mt-4.mb-5.offset-md-2
+            .col-4.col-sm-1.mr-5
+              a(href='#')
+                img(src='../../asset/images/channel-fb.png')
+            .col-4.col-sm-1.mr-5
+              a(href='#')
+                img(src='../../asset/images/channel-ig.png')
+            .col-sm-1.mr-5
+              a(href='#')
+                img.d-none.d-sm-block(src='../../asset/images/channel-pin.png')
+            .col-sm-1.mr-5
+              a(href='#')
+                img.d-none.d-sm-block(src='../../asset/images/channel-in.png')
+            .col-sm-1.mr-5
+              a(href='#')
+                img.d-none.d-sm-block(src='../../asset/images/channel-gg.png')
+            .col-sm-1.mr-5
+              a(href='#')
+                img.d-none.d-sm-block(src='../../asset/images/channel-tw.png')
+      .information
+        .container
+          .row
+            .col-sm-6.col-md-4.text-center
+              h5.infomation--header VỀ CHÚNG TÔI
+              img.mb-2.information--image(src='../../asset/images/element-info-header.png')
+              img.m-4(src='../../asset/images/logo.png', alt='')
+              p.text-left
+                strong Giới thiệu chung về Mandala
+              p.information--p
+                | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay
+                | lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm
+                | Free để giải nhiệt. Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại
+                | hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free
+                | để giải nhiệt.sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào
+                | một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+              a.information--a(href='#') Xem thêm
+            .col-sm-6.col-md-4.text-center
+              h5.infomation--header BLOG
+              img.mb-4.information--image(src='../../asset/images/element-info-header.png')
+              img.information--image--blog(src='../../asset/images/BLOG-IMAGE.png', alt='')
+              p.text-left
+                strong Giới thiệu chung về Mandala
+              p.information--p
+                | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay
+                | lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm
+                | Free để giải nhiệt.
+              a.information--a(href='#') Xem thêm
+            .col-sm-6.col-md-4.text-center
+              .row.mt-5.mt-sm-0
+                .col-sm-12.col-md-12.text-center
+                  h5.infomation--header GỬI EMAIL CHO CHÚNG TÔI
+                  img.mb-4.information--image(src='../../asset/images/element-info-header.png')
+                  input.custom-input(type='text')
+                  p.mt-3.mt-sm-0 Gửi email để nhận ưu đãi mới nhất
+                  a.btn.btn-dark.custom-btn.pr-5.mb-4.pl-5(name='', id='', href='#', role='button') GỬI
+              .row
+                .col-sm-12.col-md-12.text-center
+                  h5.infomation--header TAG SẢN PHẨM
+                  img.mb-4.information--image(src='../../asset/images/element-info-header.png')
+                  each item in ['Đồng hồ','Túi','Phụ kiện','Sơ mi','Nước hoa','Trẻ em','Váy nữ','Sandal','Thể thao','Trang phụ biển']
+                    a.btn.btn-light.custom-btn.mr-1(href='#', role='button')= item
+
+    footer
+        .container
+          .row
+            .col-md-4
+              ul.text.list-unstyled.text-muted
+                li
+                  strong LIÊN HỆ VỚI CHÚNG TÔI
+                each info in ['tầng 4, tòa nhà Hanoi Group Số 442 Hàng Giấy, Quận Hoàn Kiếm, Thành phố Hà Nội','(04) 6674 2332 - (04) 5785 2015','(04) 6674 2332 - Tinphamtp@gmail.com']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong CHUYỂN HÀNG
+                each info in ['Mua sắm trực tuyến','Chính sách vận chuyển','Chính sách người dùng','Thông tin vận chuyển']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong HỖ TRỢ
+                each info in ['Our story','Thanh toán an toàn','Thanh toán nhanh', 'Chính sách vận chuyển']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong THÔNG TIN
+                each info in ['Về chúng tôi','Điều khoản & điều kiện','Điều khoản & yêu cầu','Đơn đặt hàng']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong MY ACCOUNT
+                each info in ['Giỏ hàng','Sản phẩm yêu thích','Sản phẩm thường xem','Kiểm tra']
+                    li= info
+        hr
+        .pay
+          .container
+            .row
+              .col-sm-6
+                p.para.para--pay CopyRight@ 2015 - 2019 | Danang Sun-asterisk
+              .col-6.col-md-3.offset-md-3
+                a(href='#')
+                  img.shoppingCart--img(src='../../asset/images/pay.png')
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')

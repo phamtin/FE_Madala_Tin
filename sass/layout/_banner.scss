@@ -1,28 +1,62 @@
 header {
-    height: 80vh;
     background-image: url("../../asset/images/background-header.jpg");
     background-size: cover;
 }
 
-.custom-jumbotron{
-    height: 75vh!important;
-    padding: 0!important;
-    background-color: rgb(241, 241, 241)!important;
+.custom-jumbotron {
+    height: 75vh !important;
+    padding: 0 !important;
+    background-color: rgb(241, 241, 241) !important;
 
-    &--woman{
+    &--woman {
         height: 75vh;
     }
 
-    &--win-banner{
-        height: 35vh;
+    &--win-banner {
+        @include fullsize;
+    }
+
+    @include respond(desktop) {
+        &--woman {
+            width: 100%;
+            height: 48vw;
+        }
+    }
+    @include respond(tab-view) {
+        &--woman {
+            width: 100%;
+            height: 50vw;
+        }
+    }
+    @include respond(tab-port) {
+        &--woman {
+            width: 100%;
+            height: 50vw;
+        }
+    }
+    @include respond(phone) {
+        &--woman {
+            width: 200%;
+            height: 100%;
+        }
+    }
+}
+@include respond(desktop) {
+    .custom-jumbotron{
+        height:fit-content!important;
+    }
+}
+@include respond(phone) {
+    header{
+        overflow: hidden;
     }
 }
 
-.content-banner{
-    &--green-vera{
-        width: 65%;
+.content-banner {
+    &--green-vera {
+        width: 60%;
     }
-    &--buy{
+    &--buy {
         // @include deco-a();
     }
 }
