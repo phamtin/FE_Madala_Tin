@@ -227,3 +227,5 @@ footer {
   .gird__product:hover {
     transform: translateY(-4px);
     border-bottom: 1px #6eb320 solid; }
+.blogDetail__img {
+  width: 100%; }
