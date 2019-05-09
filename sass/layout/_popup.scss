@@ -1,0 +1,32 @@
+.popup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &__img {
+        @include align-center(50%);
+        height: 72vh;
+        padding: 0 100px;
+    }
+    &__describe {
+        @include align-center(43%);
+        font-size: 2vh;
+    }
+    &__header {
+        @include align-center(36%);
+        font-size: 4.5vh;
+    }
+    &__input {
+        @include align-center(52%);
+        width: 25%;
+        height: 5vh;
+        border-radius: 100px;
+        border: 1px rgb(177, 177, 177) solid;
+    }
+    &__submit {
+        @include align-center(59%);
+        font-size: 2.5vh;
+    }
+}

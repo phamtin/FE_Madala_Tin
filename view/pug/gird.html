@@ -12,24 +12,80 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light custom-nav">
-      <div class="container"><a class="navbar-brand custom-nav--brand" href="./pug/home.html"><img class="custom-nav--logo" src="../../asset/images/logo.png"></a>
+      <div class="container"><a class="navbar-brand custom-nav--brand" href="./homev2.html"><img class="custom-nav--logo" src="../../asset/images/logo.png"></a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav mx-auto mt-2 mt-lg-0 custom-nav--list">
-            <li class="nav-item active"><a class="nav-link" href="#">Trang chủ<span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="dropdownId" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
-              <div class="dropdown-menu" aria-labelledby="dropdownId"><a class="dropdown-item" href="#">
-                  Action
-                  1</a><a class="dropdown-item" href="#">Action 2</a></div>
+            <li class="nav-item active"><a class="nav-link" href="./homev2.html">Trang chủ<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="./aboutUs.html">Giới thiệu</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
+              <div class="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="menu__item">
+                  <div class="menu__item--detail mr-5">
+                    <h6>DƯỠNG DA</h6>
+                    <hr>
+                    <ul class="list-unstyled text-muted text-lowercase font-weight-normal">
+                      <li><a href="./gird.html">Áo khoác</a></li>
+                      <li><a href="./gird.html">Bộ áo liền quần</a></li>
+                      <li><a href="./gird.html">Trang sức</a></li>
+                      <li><a href="./gird.html">Quần/ váy</a></li>
+                      <li><a href="./gird.html">Quần short</a></li>
+                      <li><a href="./gird.html">Quần jean</a></li>
+                      <li><a href="./gird.html">Đồ đan</a></li>
+                      <li><a href="./gird.html">Áo nỉ</a></li>
+                    </ul>
+                  </div>
+                  <div class="menu__item--detail ml-5 mr-5">
+                    <h6>DƯỠNG DA</h6>
+                    <hr>
+                    <ul class="list-unstyled text-muted text-lowercase font-weight-normal">
+                      <li><a href="#">Áo cánh/ áo sơ mi</a></li>
+                      <li><a href="#">Túi sách, balo</a></li>
+                      <li><a href="#">Khăn choàng cổ</a></li>
+                      <li><a href="#">Hats &amp; Gloves</a></li>
+                      <li><a href="#">Vớ &amp; socks</a></li>
+                      <li><a href="#">Jewerly</a></li>
+                      <li><a href="#">Bị bảo vệ</a></li>
+                      <li><a href="#">Giày thể thao</a></li>
+                    </ul>
+                  </div>
+                  <div class="menu__item--detail ml-5">
+                    <h6>DƯỠNG DA</h6>
+                    <hr>
+                    <ul class="list-unstyled text-muted text-lowercase font-weight-normal">
+                      <li><a href="#">Áo khoác</a></li>
+                      <li><a href="#">Bộ áo liền quần</a></li>
+                      <li><a href="#">Dresses</a></li>
+                      <li><a href="#">Quần/ váy</a></li>
+                      <li><a href="#">Quần short</a></li>
+                      <li><a href="#">Quần jean</a></li>
+                      <li><a href="#">Đồ đan</a></li>
+                      <li><a href="#">Áo nhập khẩu</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="nav-item"><a class="nav-link" href="#">Tin tức<span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Bản đồ</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
-          </ul><i class="fas fa-shopping-cart custom-nav--cart mr-5 ml-5"></i>
-          <form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-outline-success my-2 my-sm-0 ml-auto" type="submit"></button>
-          </form>
+            <li class="nav-item"><a class="nav-link" href="./page404.html">Bản đồ</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contactUs.html">Liên hệ</a></li>
+          </ul>
+          <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-shopping-cart custom-nav--cart mr-5 ml-5 mb-4"></i></a>
+            <div class="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="menu__item menu__item--shoppingcart">
+                <div class="menu__item--detail mb-4"><img class="mr-3 float-left" src="../../asset/images/man-spc.png">
+                  <p class="float-left mr-2 mb-1">Áo sơ mi nam</p><i class="fas fa-times"></i><img class="float-left" src="../../asset/images/navbar-120k.png">
+                </div>
+                <div class="menu__item--detail mb-4"><img class="mr-3 float-left" src="../../asset/images/man-spc.png">
+                  <p class="float-left mr-2 mb-1">Áo sơ mi nam</p><i class="fas fa-times"></i><img class="float-left" src="../../asset/images/navbar-120k.png">
+                </div>
+                <hr>
+                <p class="float-left mr-5">Tổng số</p>
+                <figure><strong> 240.000 đ</strong></figure><a class="btn btn-dark custom-btn" name="" href="#" role="button">GIỎ HÀNG</a>
+              </div>
+            </div>
+          </li>
+          <form class="form-inline my-2 my-lg-0"><a class="deco-a" href="#"><i class="fas fa-search"></i></a></form>
         </div>
       </div>
     </nav>
@@ -37,8 +93,8 @@
       <ol class="breadcrumb pb-0 custom-breadcrumb">
         <div class="container">
           <div class="row">
-            <li class="breadcrumb-item"><a href="./home.html">Home</a></li>
-            <li class="breadcrumb-item">Sản phẩm</li>
+            <li class="breadcrumb-item"><a href="./homev2.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="">Sản phẩm</a></li>
             <li class="breadcrumb-item">Trang sức</li>
           </div>
         </div>
@@ -105,14 +161,14 @@
           <div class="col-md-9 ml-5 ml-sm-0">
             <div class="right">
               <div class="row">
-                <div class="col-3 mr-auto"><a href="#"><img src="../../asset/images/grid1.png" alt=""></a><a href="#"><img src="../../asset/images/grid2.png" alt=""></a></div>
+                <div class="col-3 mr-auto"><a class="mr-2" href="#"><img src="../../asset/images/grid1.png" alt=""></a><a href="./list.html"><img src="../../asset/images/grid2.png" alt=""></a></div>
                 <div class="col-3"><a href="#"> 1</a><a href="#"> 2</a><a href="#"> 3</a></div>
               </div>
               <hr>
               <div class="row mt-4">
                 <div class="col-5 col-sm-3 offset-md-1 mr-4">
                   <div class="gird__product">
-                    <div class="card text-center custom-card"><img class="card-img-top" src="../../asset/images/spbc-3.png" alt="">
+                    <div class="card text-center custom-card"><a><img class="card-img-top" src="../../asset/images/spbc-3.png" alt=""></a>
                       <div class="card-body"><small class="text-muted"><strong> OHUI</strong></small>
                         <h6 class="card-title">Mỹ phẩm Châu Âu</h6><img src="../../asset/images/navbar-120k.png" alt="">
                       </div>
@@ -121,7 +177,7 @@
                 </div>
                 <div class="col-5 col-sm-3 mr-4">
                   <div class="gird__product">
-                    <div class="card text-center custom-card"><img class="card-img-top" src="../../asset/images/spbc-2.png" alt="">
+                    <div class="card text-center custom-card"><a><img class="card-img-top" src="../../asset/images/spbc-2.png" alt=""></a>
                       <div class="card-body"><small class="text-muted"><strong> OHUI</strong></small>
                         <h6 class="card-title">Mỹ phẩm Châu Âu</h6><img src="../../asset/images/navbar-120k.png" alt="">
                       </div>
@@ -130,7 +186,7 @@
                 </div>
                 <div class="col-5 col-sm-3">
                   <div class="gird__product d-none d-sm-block">
-                    <div class="card text-center custom-card"><img class="card-img-top" src="../../asset/images/spbc-1.png" alt="">
+                    <div class="card text-center custom-card"><a><img class="card-img-top" src="../../asset/images/spbc-1.png" alt=""></a>
                       <div class="card-body"><small class="text-muted"><strong> OHUI</strong></small>
                         <h6 class="card-title">Mỹ phẩm Châu Âu</h6><img src="../../asset/images/navbar-120k.png" alt="">
                       </div>
@@ -141,7 +197,7 @@
               <div class="row">
                 <div class="col-5 col-sm-3 offset-md-1 mr-4">
                   <div class="gird__product">
-                    <div class="card text-center custom-card"><img class="card-img-top" src="../../asset/images/spbc-2.png" alt="">
+                    <div class="card text-center custom-card"><a><img class="card-img-top" src="../../asset/images/spbc-2.png" alt=""></a>
                       <div class="card-body"><small class="text-muted"><strong> OHUI</strong></small>
                         <h6 class="card-title">Mỹ phẩm Châu Âu</h6><img src="../../asset/images/navbar-120k.png" alt="">
                       </div>
@@ -150,7 +206,7 @@
                 </div>
                 <div class="col-5 col-sm-3 mr-4">
                   <div class="gird__product">
-                    <div class="card text-center custom-card"><img class="card-img-top" src="../../asset/images/spbc-1.png" alt="">
+                    <div class="card text-center custom-card"><a><img class="card-img-top" src="../../asset/images/spbc-1.png" alt=""></a>
                       <div class="card-body"><small class="text-muted"><strong> OHUI</strong></small>
                         <h6 class="card-title">Mỹ phẩm Châu Âu</h6><img src="../../asset/images/navbar-120k.png" alt="">
                       </div>
@@ -159,7 +215,7 @@
                 </div>
                 <div class="col-5 col-sm-3">
                   <div class="gird__product d-none d-sm-block">
-                    <div class="card text-center custom-card"><img class="card-img-top" src="../../asset/images/spbc-3.png" alt="">
+                    <div class="card text-center custom-card"><a><img class="card-img-top" src="../../asset/images/spbc-3.png" alt=""></a>
                       <div class="card-body"><small class="text-muted"><strong> OHUI</strong></small>
                         <h6 class="card-title">Mỹ phẩm Châu Âu</h6><img src="../../asset/images/navbar-120k.png" alt="">
                       </div>
@@ -168,7 +224,7 @@
                 </div>
               </div>
               <div class="row mt-4">
-                <div class="col-3 mr-auto"><a href="#"><img src="../../asset/images/grid1.png" alt=""></a><a href="#"><img src="../../asset/images/grid2.png" alt=""></a></div>
+                <div class="col-3 mr-auto"><a class="mr-2" href="#"><img src="../../asset/images/grid1.png" alt=""></a><a href="./list.html"><img src="../../asset/images/grid2.png" alt=""></a></div>
                 <div class="col-3"><a href="#"> 1</a><a href="#"> 2</a><a href="#"> 3</a></div>
               </div>
               <hr>
@@ -217,10 +273,10 @@
             <div class="col-md-2">
               <ul class="text list-unstyled text-muted">
                 <li><strong>MY ACCOUNT</strong></li>
-                <li>Giỏ hàng</li>
-                <li>Sản phẩm yêu thích</li>
-                <li>Sản phẩm thường xem</li>
-                <li>Kiểm tra</li>
+                <li><a class="text-muted" href="./shoppingCart.html">Giỏ hàng</a></li>
+                <li><a class="text-muted" href="./account.html">My account</a></li>
+                <li><a class="text-muted" href="./resgister.html">Đăng ký tài khoản</a></li>
+                <li><a class="text-muted" href="./login.html">Đăng nhập</a></li>
               </ul>
             </div>
           </div>
@@ -232,7 +288,7 @@
               <div class="col-sm-6">
                 <p class="para para--pay">CopyRight@ 2015 - 2019 | Danang Sun-asterisk</p>
               </div>
-              <div class="col-6 col-md-3 offset-md-3"><a href="#"><img class="gird__img" src="../../asset/images/pay.png"></a></div>
+              <div class="col-6 col-md-3 offset-md-2 offset-lg-3"><a href="#"><img class="shoppingCart--img" src="../../asset/images/pay.png"></a></div>
             </div>
           </div>
         </div>

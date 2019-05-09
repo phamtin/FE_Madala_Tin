@@ -11,82 +11,98 @@ html(lang='en')
     link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
   body
     header
+      .navigation.d-none.d-md-block
+        input#navi-toggle.navigation__checkbox(type='checkbox')
+        .background
+        label.navigation__button(for='navi-toggle')
+          .navigation__icon
+            i.fa-2x.fas.fa-bars.mt-3.pt-0(style='color: grey')
+        nav.nav
+          .popup
+            img.popup__img(src='../../asset/images/bg-popup.png')
+            h4.popup__header GỬI EMAIL
+            p.popup__describe.para.para--detail.text-center
+              | Hãy gửi email cua bạn liên hệ với chúng tôi để đc tư vấn tôt nhất.
+              br
+              |  Sự hài lòng cua bạn là thành công của chúng tôi
+            input.popup__input(type='text', text-holder='')
+            a.popup__submit.deco-a(href='#') GỬI EMAIL
+
       nav.navbar.navbar-expand-md.navbar-light.bg-light.custom-nav
-        .container
-          a.navbar-brand.custom-nav--brand(href='#')
-            img.custom-nav--logo(src='../../asset/images/logo.png')
-          button.navbar-toggler.d-lg-none(type='button', data-toggle='collapse', data-target='#collapsibleNavId', aria-controls='collapsibleNavId', aria-expanded='false', aria-label='Toggle navigation')
-            span.navbar-toggler-icon
-          #collapsibleNavId.collapse.navbar-collapse
-            ul.navbar-nav.mx-auto.mt-2.mt-lg-0.custom-nav--list
-              li.nav-item.active
-                a.nav-link(href='#')
-                  | Trang chủ
-                  span.sr-only (current)
-              li.nav-item
-                a.nav-link(href='#') Giới thiệu
-              li.nav-item.dropdown
-                a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                  | Sản
-                  | phẩm
-                .dropdown-menu.custom-dropdown-menu(aria-labelledby='navbarDropdown')
-                  .menu__item
-                    .menu__item--detail.mr-5
-                      h6 DƯỠNG DA
-                      hr
-                      ul.list-unstyled.text-muted.text-lowercase.font-weight-normal
-                        each item in ['Áo cánh/ áo sơ mi','Túi sách, balo','Khăn choàng cổ','Hats & Gloves','Vớ & socks','Jewerly','Bị bảo vệ','Giày thể thao']
-                          li
-                            a(href="#")= item
-                    .menu__item--detail.ml-5.mr-5
-                      h6 DƯỠNG TÓC
-                      hr
-                      ul.list-unstyled.text-muted.text-lowercase.font-weight-normal
-                        each item in ['Áo cánh/ áo sơ mi','Túi sách, balo','Khăn choàng cổ','Hats & Gloves','Vớ & socks','Jewerly','Bị bảo vệ','Giày thể thao']
-                          li
-                            a(href="#")= item
-                    .menu__item--detail.ml-5
-                      h6 DƯỠNG DA
-                      hr
-                      ul.list-unstyled.text-muted.text-lowercase.font-weight-normal
-                        each item in ['Áo khoác','Bộ áo liền quần','Dresses','Quần/ váy','Quần short','Quần jean','Đồ đan','Áo nhập khẩu']
-                          li
-                            a(href="#")= item
-              li.nav-item
-                a.nav-link(href='#')
-                  | Tin tức
-                  span.sr-only (current)
-              li.nav-item
-                a.nav-link(href='#') Bản đồ
-              li.nav-item
-                a.nav-link(href='#') Liên hệ
+       .container
+        a.navbar-brand.custom-nav--brand(href='./homev2.html')
+          img.custom-nav--logo(src='../../asset/images/logo.png')
+        button.navbar-toggler.d-lg-none(type='button', data-toggle='collapse', data-target='#collapsibleNavId', aria-controls='collapsibleNavId', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #collapsibleNavId.collapse.navbar-collapse
+          ul.navbar-nav.mx-auto.mt-2.mt-lg-0.custom-nav--list
+            li.nav-item.active
+              a.nav-link(href='./homev2.html')
+                | Trang chủ
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='./aboutUs.html') Giới thiệu
             li.nav-item.dropdown
-              a#navbarDropdown.nav-link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                i.fas.fa-shopping-cart.custom-nav--cart.mr-5.ml-5.mb-4
+              a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Sản phẩm
               .dropdown-menu.custom-dropdown-menu(aria-labelledby='navbarDropdown')
-                .menu__item.menu__item--shoppingcart
-                  .menu__item--detail.mb-4
-                    img.mr-3.float-left(src='../../asset/images/man-spc.png')
-                    p.float-left.mr-2.mb-1 Áo sơ mi nam
-                    i.fas.fa-times
-                    img.float-left(src='../../asset/images/navbar-120k.png')
-                  .menu__item--detail.mb-4
-                    img.mr-3.float-left(src='../../asset/images/man-spc.png')
-                    p.float-left.mr-2.mb-1 Áo sơ mi nam
-                    i.fas.fa-times
-                    img.float-left(src='../../asset/images/navbar-120k.png')
-                  hr
-                  p.float-left.mr-5 Tổng số
-                  figure
-                    strong  240.000 đ
-                  a.btn.btn-dark.custom-btn(name='', href='#', role='button') GIỎ HÀNG
-            form.form-inline.my-2.my-lg-0
-              i.fas.fa-search
+                .menu__item
+                  .menu__item--detail.mr-5
+                    h6 DƯỠNG DA
+                    hr
+                    ul.list-unstyled.text-muted.text-lowercase.font-weight-normal
+                      each item in ['Áo khoác','Bộ áo liền quần','Trang sức','Quần/ váy','Quần short','Quần jean','Đồ đan','Áo nỉ']
+                        li
+                          a(href="./gird.html")= item
+                  .menu__item--detail.ml-5.mr-5
+                    h6 DƯỠNG DA
+                    hr
+                    ul.list-unstyled.text-muted.text-lowercase.font-weight-normal
+                      each item in ['Áo cánh/ áo sơ mi','Túi sách, balo','Khăn choàng cổ','Hats & Gloves','Vớ & socks','Jewerly','Bị bảo vệ','Giày thể thao']
+                        li
+                          a(href="#")= item
+                  .menu__item--detail.ml-5
+                    h6 DƯỠNG DA
+                    hr
+                    ul.list-unstyled.text-muted.text-lowercase.font-weight-normal
+                      each item in ['Áo khoác','Bộ áo liền quần','Dresses','Quần/ váy','Quần short','Quần jean','Đồ đan','Áo nhập khẩu']
+                        li
+                          a(href="#")= item
+            li.nav-item
+              a.nav-link(href='#')
+                | Tin tức
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='./page404.html') Bản đồ
+            li.nav-item
+              a.nav-link(href='./contactUs.html') Liên hệ
+          li.nav-item.dropdown
+            a#navbarDropdown.nav-link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              i.fas.fa-shopping-cart.custom-nav--cart.mr-5.ml-5.mb-4
+            .dropdown-menu.custom-dropdown-menu(aria-labelledby='navbarDropdown')
+              .menu__item.menu__item--shoppingcart
+                .menu__item--detail.mb-4
+                  img.mr-3.float-left(src='../../asset/images/man-spc.png')
+                  p.float-left.mr-2.mb-1 Áo sơ mi nam
+                  i.fas.fa-times
+                  img.float-left(src='../../asset/images/navbar-120k.png')
+                .menu__item--detail.mb-4
+                  img.mr-3.float-left(src='../../asset/images/man-spc.png')
+                  p.float-left.mr-2.mb-1 Áo sơ mi nam
+                  i.fas.fa-times
+                  img.float-left(src='../../asset/images/navbar-120k.png')
+                hr
+                p.float-left.mr-5 Tổng số
+                figure
+                  strong  240.000 đ
+                a.btn.btn-dark.custom-btn(name='', href='./shoppingCart.html', role='button') GIỎ HÀNG
+          form.form-inline.my-2.my-lg-0
+            a.deco-a(href="#")
+             <i class="fas fa-search"></i>
       .jumbotron.custom-jumbotron
         .container
           .row.mt-5.mt-sm-0.mt-md-3
             .col-6.col-md-6
-              .row.pt-5.pt-md-3.pt-lg-0
+              .row.pt-5.pt-md-3.pt-lg-5
                 .col-12.col-sm-6.offset-sm-3.offset-lg-3
                   img.custom-jumbotron--win-banner(src='../../asset/images/win-banner.png')
               .content-banner
@@ -104,27 +120,24 @@ html(lang='en')
     main
       .container
         .row.text-center
-          .col-sm-4.pt-1.pb-2.pb-md-5.pb-lg-0
+          .col-sm-4.pt-1.pt-sm-0.pb-2.pb-md-5.pb-lg-4
             .row
               .col-2.offset-1.offset-sm-0.col-sm-12
                 img(src='../../asset/images/plane-icon.png', alt='')
               .col-7.col-sm-12
-                p Miễn phí vận chuyển
-            hr
-          .col-sm-4.pt-1.pb-2.pb-md-5.pb-lg-0
+                small Miễn phí vận chuyển
+          .col-sm-4.pt-1.pt-sm-0.pb-2.pb-md-5.pb-lg-4
             .row
               .col-2.offset-1.offset-sm-0.col-sm-12
-                img(src='../../asset/images/plane-icon.png', alt='')
+                img(src='../../asset/images/present-box-icon.png', alt='')
               .col-7.col-sm-12
-                p Nhận ngay quà tặng trị giá 350.000đ
-            hr
-          .col-sm-4.pt-1.pb-2.pb-md-5.pb-lg-0
+                small Nhận ngay quà tặng trị giá 350.000đ
+          .col-sm-4.pt-1.pt-sm-0.pb-2.pb-md-5.pb-lg-4
             .row
               .col-2.offset-1.offset-sm-0.col-sm-12
-                img(src='../../asset/images/plane-icon.png', alt='')
+                img(src='../../asset/images/phone-icon.png', alt='')
               .col-7.col-sm-12
-                p Giảm 20% cho đơn hàng trên 5.000.000đ
-            hr
+                small Giảm 20% cho đơn hàng trên 5.000.000đ
           //
             <div class="col-sm-4 pt-1 pb-2 pb-md-5 text-center">
             <img src="../../asset/images/plane-icon.png" alt="">
@@ -221,17 +234,17 @@ html(lang='en')
               img.block-product__img(src='../../asset/images/text-spbc.png')
           .row.mt-5.mb-5.pl-5.pl-sm-0
             .col-6.col-sm-2
-              a(href='') Mỹ phẩm
+              a(href='./gird.html') Mỹ phẩm
             .col-6.col-sm-2
-              a(href='') Quần áo
+              a(href='#') Quần áo
             .col-6.col-sm-2
-              a(href='') Giày Sport
+              a(href='#') Giày Sport
             .col-6.col-sm-2
-              a(href='') Trang sức
+              a(href='#') Trang sức
             .col-6.col-sm-2
-              a(href='') Nhẫn
+              a(href='#') Nhẫn
             .col-6.col-sm-2
-              a(href='') Heathy
+              a(href='#') Heathy
           .row
             .col-md-12
               .card-deck.text-center
@@ -239,25 +252,29 @@ html(lang='en')
                   img.card-img-top.mx-auto(style='width:60%', src='../../asset/images/spbc-3.png')
                   .card-body
                     p.card-title.custom-card--title
-                      strong Mỹ phẩm châu Âu
+                      strong
+                        a(href='./gird.html') Mỹ phẩm châu Âu
                     p.card-text.custom-card--text 355.000đ
                 .card.custom-card.mr-5
                   img.card-img-top.mx-auto(style='width:60%', src='../../asset/images/spbc-4.png')
                   .card-body
                     p.card-title.custom-card--title
-                      strong Mỹ phẩm châu Âu
+                      strong
+                        a(href='./gird.html') Mỹ phẩm châu Mỹ
                     p.card-text.custom-card--text 355.000đ
                 .card.custom-card.mr-5.d-none.d-md-block
                   img.card-img-top.mx-auto(style='width:60%', src='../../asset/images/spbc-1.png')
                   .card-body
                     p.card-title.custom-card--title
-                      strong Mỹ phẩm châu Âu
+                      strong
+                        a(href='./gird.html') Mỹ phẩm châu Á
                     p.card-text.custom-card--text 355.000đ
                 .card.custom-card.mr-5.d-none.d-md-block
                   img.card-img-top.mx-auto(style='width:60%', src='../../asset/images/spbc-2.png')
                   .card-body
                     p.card-title.custom-card--title
-                      strong Mỹ phẩm châu Âu
+                      strong
+                        a(href='./gird.html') Mỹ phẩm Hàn Quóc
                     p.card-text.custom-card--text 355.000đ
       .channel
         .container
@@ -354,15 +371,16 @@ html(lang='en')
               ul.text.list-unstyled.text-muted
                 li
                   strong MY ACCOUNT
-                each info in ['Giỏ hàng','Sản phẩm yêu thích','Sản phẩm thường xem','Kiểm tra']
-                    li= info
+                each key, value in {'./shoppingCart.html':'Giỏ hàng','./account.html':'My account','./resgister.html':'Đăng ký tài khoản','./login.html':'Đăng nhập'}
+                  li
+                    a.text-muted(href= value)= key
         hr
         .pay
           .container
             .row
               .col-sm-6
                 p.para.para--pay CopyRight@ 2015 - 2019 | Danang Sun-asterisk
-              .col-6.col-md-3.offset-md-3
+              .col-6.col-md-3.offset-md-2.offset-lg-3
                 a(href='#')
                   img.shoppingCart--img(src='../../asset/images/pay.png')
     // Optional JavaScript

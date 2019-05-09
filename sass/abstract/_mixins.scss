@@ -10,7 +10,7 @@
     text-decoration: none;
     color: $color;
     display: inline-block;
-    &:hover{
+    &:hover {
         text-decoration: none;
         color: $green-primary;
     }
@@ -26,28 +26,35 @@
     font-weight: bold;
 }
 
+@mixin align-center($top) {
+    position: absolute;
+    top: $top;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @mixin respond($breakpoint) {
-    @if($breakpoint==phone) {
+    @if ($breakpoint==phone) {
         @media (max-width: 576px) {
-            @content
+            @content;
         }
-    };
+    }
 
-    @if($breakpoint==tab-port) {
+    @if ($breakpoint==tab-port) {
         @media (max-width: 756px) {
-            @content
+            @content;
         }
-    };
+    }
 
-    @if($breakpoint==tab-land) {
+    @if ($breakpoint==tab-land) {
         @media (max-width: 992px) {
-            @content
+            @content;
         }
-    };
+    }
 
-    @if($breakpoint==desktop) {
+    @if ($breakpoint==desktop) {
         @media (max-width: 1200px) {
-            @content
+            @content;
         }
     }
 }

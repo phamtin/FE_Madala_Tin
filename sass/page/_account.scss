@@ -1,0 +1,23 @@
+#account-name {
+    font-size: $text-big;
+    margin-bottom: 0;
+}
+
+table,
+td,
+th {
+    border: 1px rgb(209, 209, 209) solid;
+
+    #tttt {
+        color: rgb(187, 13, 13);
+    }
+
+    thead {
+        background-color: $color-grey;
+    }
+}
+.account{
+    &--img{
+        width: 100%;
+    }
+}

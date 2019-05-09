@@ -12,39 +12,81 @@ html(lang='en')
   body
     main
       nav.navbar.navbar-expand-md.navbar-light.bg-light.custom-nav
-        .container
-          a.navbar-brand.custom-nav--brand(href='#')
-            img.custom-nav--logo(src='../../asset/images/logo.png')
-          button.navbar-toggler.d-lg-none(type='button', data-toggle='collapse', data-target='#collapsibleNavId', aria-controls='collapsibleNavId', aria-expanded='false', aria-label='Toggle navigation')
-            span.navbar-toggler-icon
-          #collapsibleNavId.collapse.navbar-collapse
-            ul.navbar-nav.mx-auto.mt-2.mt-lg-0.custom-nav--list
-              li.nav-item.active
-                a.nav-link(href='#')
-                  | Trang chủ
-                  span.sr-only (current)
-              li.nav-item
-                a.nav-link(href='#') Giới thiệu
-              li.nav-item.dropdown
-                a#dropdownId.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Sản phẩm
-                .dropdown-menu(aria-labelledby='dropdownId')
-              li.nav-item
-                a.nav-link(href='#')
-                  | Tin tức
-                  span.sr-only (current)
-              li.nav-item
-                a.nav-link(href='#') Bản đồ
-              li.nav-item
-                a.nav-link(href='#') Liên hệ
-            i.fas.fa-shopping-cart.custom-nav--cart.mr-5.ml-5
-            form.form-inline.my-2.my-lg-0
-              button.btn.btn-outline-success.my-2.my-sm-0.ml-auto(type='submit')
+       .container
+        a.navbar-brand.custom-nav--brand(href='./homev2.html')
+          img.custom-nav--logo(src='../../asset/images/logo.png')
+        button.navbar-toggler.d-lg-none(type='button', data-toggle='collapse', data-target='#collapsibleNavId', aria-controls='collapsibleNavId', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #collapsibleNavId.collapse.navbar-collapse
+          ul.navbar-nav.mx-auto.mt-2.mt-lg-0.custom-nav--list
+            li.nav-item.active
+              a.nav-link(href='./homev2.html')
+                | Trang chủ
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='./aboutUs.html') Giới thiệu
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Sản phẩm
+              .dropdown-menu.custom-dropdown-menu(aria-labelledby='navbarDropdown')
+                .menu__item
+                  .menu__item--detail.mr-5
+                    h6 DƯỠNG DA
+                    hr
+                    ul.list-unstyled.text-muted.text-lowercase.font-weight-normal
+                      each item in ['Áo khoác','Bộ áo liền quần','Trang sức','Quần/ váy','Quần short','Quần jean','Đồ đan','Áo nỉ']
+                        li
+                          a(href="./gird.html")= item
+                  .menu__item--detail.ml-5.mr-5
+                    h6 DƯỠNG DA
+                    hr
+                    ul.list-unstyled.text-muted.text-lowercase.font-weight-normal
+                      each item in ['Áo cánh/ áo sơ mi','Túi sách, balo','Khăn choàng cổ','Hats & Gloves','Vớ & socks','Jewerly','Bị bảo vệ','Giày thể thao']
+                        li
+                          a(href="#")= item
+                  .menu__item--detail.ml-5
+                    h6 DƯỠNG DA
+                    hr
+                    ul.list-unstyled.text-muted.text-lowercase.font-weight-normal
+                      each item in ['Áo khoác','Bộ áo liền quần','Dresses','Quần/ váy','Quần short','Quần jean','Đồ đan','Áo nhập khẩu']
+                        li
+                          a(href="#")= item
+            li.nav-item
+              a.nav-link(href='#')
+                | Tin tức
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='./page404.html') Bản đồ
+            li.nav-item
+              a.nav-link(href='./contactUs.html') Liên hệ
+          li.nav-item.dropdown
+            a#navbarDropdown.nav-link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              i.fas.fa-shopping-cart.custom-nav--cart.mr-5.ml-5.mb-4
+            .dropdown-menu.custom-dropdown-menu(aria-labelledby='navbarDropdown')
+              .menu__item.menu__item--shoppingcart
+                .menu__item--detail.mb-4
+                  img.mr-3.float-left(src='../../asset/images/man-spc.png')
+                  p.float-left.mr-2.mb-1 Áo sơ mi nam
+                  i.fas.fa-times
+                  img.float-left(src='../../asset/images/navbar-120k.png')
+                .menu__item--detail.mb-4
+                  img.mr-3.float-left(src='../../asset/images/man-spc.png')
+                  p.float-left.mr-2.mb-1 Áo sơ mi nam
+                  i.fas.fa-times
+                  img.float-left(src='../../asset/images/navbar-120k.png')
+                hr
+                p.float-left.mr-5 Tổng số
+                figure
+                  strong  240.000 đ
+                a.btn.btn-dark.custom-btn(name='', href='#', role='button') GIỎ HÀNG
+          form.form-inline.my-2.my-lg-0
+            a.deco-a(href="#")
+             <i class="fas fa-search"></i>
       nav(aria-label='breadcrumb')
         ol.breadcrumb.custom-breadcrumb
           .container
             .row.border-bottom.pb-3
               li.breadcrumb-item
-                a(href='./home.html') Home
+                a(href='./homev2.html') Home
               li.breadcrumb-item Blog
       .container
         .row
@@ -66,7 +108,8 @@ html(lang='en')
           .row
             .col-sm-6.col-md-4
               img.content-blog--img(src='../../asset/images/blog-1.png')
-              h6 REVIEW KEM BOUJOUR VELVET
+              h6
+               a.deco-a(href='blogDetail.html') REVIEW KEM BOUJOUR VELVET
               hr
               p.para
                 | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
@@ -82,7 +125,8 @@ html(lang='en')
             .col-sm-6.col-md-4
               .second-article
                 img.content-blog--img(src='../../asset/images/blog-2.png')
-                h6 REVIEW KEM BOUJOUR VELVET
+                h6
+                  a.deco-a(href='blogDetail.html') REVIEW KEM BOUJOUR VELVET
                 hr
                 p.para
                   | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
@@ -98,7 +142,8 @@ html(lang='en')
             .col-sm-6.col-md-4
               .last-article
                 img.content-blog--img(src='../../asset/images/blog-3.png')
-                h6 REVIEW KEM BOUJOUR VELVET
+                h6
+                  a.deco-a(href='blogDetail.html') REVIEW KEM BOUJOUR VELVET
                 hr
                 p.para
                   | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
@@ -114,7 +159,8 @@ html(lang='en')
           .row
             .col-sm-6.col-md-4
               img.content-blog--img(src='../../asset/images/blog-1.png')
-              h6 REVIEW KEM BOUJOUR VELVET
+              h6
+                a.deco-a(href='blogDetail.html') REVIEW KEM BOUJOUR VELVET
               hr
               p.para
                 | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
@@ -146,7 +192,8 @@ html(lang='en')
             .col-sm-6.col-md-4
               .last-article
                 img.content-blog--img(src='../../asset/images/blog-2.png')
-                h6 REVIEW KEM BOUJOUR VELVET
+                h6
+                  a.deco-a(href='blogDetail.html') REVIEW KEM BOUJOUR VELVET
                 hr
                 p.para
                   | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
@@ -162,7 +209,8 @@ html(lang='en')
           .row
             .col-sm-6.col-md-4
               img.content-blog--img(src='../../asset/images/blog-3.png')
-              h6 REVIEW KEM BOUJOUR VELVET
+              h6
+                a.deco-a(href='blogDetail.html') REVIEW KEM BOUJOUR VELVET
               hr
               p.para
                 | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
@@ -178,7 +226,8 @@ html(lang='en')
             .col-sm-6.col-md-4
               .second-article
                 img.content-blog--img(src='../../asset/images/blog-1.png')
-                h6 REVIEW KEM BOUJOUR VELVET
+                h6
+                  a.deco-a(href='blogDetail.html') REVIEW KEM BOUJOUR VELVET
                 hr
                 p.para
                   | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
@@ -194,7 +243,8 @@ html(lang='en')
             .col-sm-6.col-md-4
               .last-article
                 img.content-blog--img(src='../../asset/images/blog-3.png')
-                h6 REVIEW KEM BOUJOUR VELVET
+                h6
+                  a.deco-a(href='blogDetail.html') REVIEW KEM BOUJOUR VELVET
                 hr
                 p.para
                   | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
@@ -249,15 +299,16 @@ html(lang='en')
               ul.text.list-unstyled.text-muted
                 li
                   strong MY ACCOUNT
-                each info in ['Giỏ hàng','Sản phẩm yêu thích','Sản phẩm thường xem','Kiểm tra']
-                    li= info
+                each key, value in {'./shoppingCart.html':'Giỏ hàng','./account.html':'My account','./resgister.html':'Đăng ký tài khoản','./login.html':'Đăng nhập'}
+                  li
+                    a.text-muted(href= value)= key
         hr
         .pay
           .container
             .row
               .col-sm-6
                 p.para.para--pay CopyRight@ 2015 - 2019 | Danang Sun-asterisk
-              .col-6.col-md-3.offset-md-3
+              .col-6.col-md-3.offset-md-2.offset-lg-3
                 a(href='#')
                   img.shoppingCart--img(src='../../asset/images/pay.png')
     // jQuery first, then Popper.js, then Bootstrap JS

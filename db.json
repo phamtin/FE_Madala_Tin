@@ -1,0 +1,25 @@
+{
+    "products": [
+        {
+            "id": "0",
+            "heading": "Mỹ phẩm Châu Âu",
+            "price": 300000,
+            "description": "Tự hào được ghi là năm mà Tiffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà.",
+            "linkImage": "../../asset/images/spbc-4.png"
+        },
+        {
+            "id": "1",
+            "heading": "Mỹ phẩm Nhân Sâm",
+            "price": 200000,
+            "description": "Tự hào được ghi là năm mà Tiffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà.",
+            "linkImage": "../../asset/images/spbc-3.png"
+        },
+        {
+            "id": "2",
+            "heading": "Mỹ phẩm dưỡng da",
+            "price": 100000,
+            "description": "Tự hào được ghi là năm mà Tiffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà.",
+            "linkImage": "../../asset/images/spbc-2.png"
+        }
+    ]
+}

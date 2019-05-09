@@ -42,12 +42,12 @@ header {
     }
 }
 @include respond(desktop) {
-    .custom-jumbotron{
-        height:fit-content!important;
+    .custom-jumbotron {
+        height: fit-content !important;
     }
 }
 @include respond(phone) {
-    header{
+    header {
         overflow: hidden;
     }
 }
@@ -55,8 +55,5 @@ header {
 .content-banner {
     &--green-vera {
         width: 60%;
-    }
-    &--buy {
-        // @include deco-a();
     }
 }

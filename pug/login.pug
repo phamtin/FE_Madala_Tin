@@ -1,0 +1,158 @@
+doctype html
+html(lang='en')
+  head
+    title Login
+    // Required meta tags
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='../../asset/css/style.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin='anonymous')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Bootstrap CSS
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+  body
+    nav.navbar.navbar-expand-md.navbar-light.bg-light.custom-nav
+       .container
+        a.navbar-brand.custom-nav--brand(href='./homev2.html')
+          img.custom-nav--logo(src='../../asset/images/logo.png')
+        button.navbar-toggler.d-lg-none(type='button', data-toggle='collapse', data-target='#collapsibleNavId', aria-controls='collapsibleNavId', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #collapsibleNavId.collapse.navbar-collapse
+          ul.navbar-nav.mx-auto.mt-2.mt-lg-0.custom-nav--list
+            li.nav-item.active
+              a.nav-link(href='./homev2.html')
+                | Trang chủ
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='./aboutUs.html') Giới thiệu
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Sản phẩm
+              .dropdown-menu.custom-dropdown-menu(aria-labelledby='navbarDropdown')
+                .menu__item
+                  .menu__item--detail.mr-5
+                    h6 DƯỠNG DA
+                    hr
+                    ul.list-unstyled.text-muted.text-lowercase.font-weight-normal
+                      each item in ['Áo khoác','Bộ áo liền quần','Trang sức','Quần/ váy','Quần short','Quần jean','Đồ đan','Áo nỉ']
+                        li
+                          a(href="./gird.html")= item
+                  .menu__item--detail.ml-5.mr-5
+                    h6 DƯỠNG DA
+                    hr
+                    ul.list-unstyled.text-muted.text-lowercase.font-weight-normal
+                      each item in ['Áo cánh/ áo sơ mi','Túi sách, balo','Khăn choàng cổ','Hats & Gloves','Vớ & socks','Jewerly','Bị bảo vệ','Giày thể thao']
+                        li
+                          a(href="#")= item
+                  .menu__item--detail.ml-5
+                    h6 DƯỠNG DA
+                    hr
+                    ul.list-unstyled.text-muted.text-lowercase.font-weight-normal
+                      each item in ['Áo khoác','Bộ áo liền quần','Dresses','Quần/ váy','Quần short','Quần jean','Đồ đan','Áo nhập khẩu']
+                        li
+                          a(href="#")= item
+            li.nav-item
+              a.nav-link(href='#')
+                | Tin tức
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='./page404.html') Bản đồ
+            li.nav-item
+              a.nav-link(href='./contactUs.html') Liên hệ
+          li.nav-item.dropdown
+            a#navbarDropdown.nav-link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              i.fas.fa-shopping-cart.custom-nav--cart.mr-5.ml-5.mb-4
+            .dropdown-menu.custom-dropdown-menu(aria-labelledby='navbarDropdown')
+              .menu__item.menu__item--shoppingcart
+                .menu__item--detail.mb-4
+                  img.mr-3.float-left(src='../../asset/images/man-spc.png')
+                  p.float-left.mr-2.mb-1 Áo sơ mi nam
+                  i.fas.fa-times
+                  img.float-left(src='../../asset/images/navbar-120k.png')
+                .menu__item--detail.mb-4
+                  img.mr-3.float-left(src='../../asset/images/man-spc.png')
+                  p.float-left.mr-2.mb-1 Áo sơ mi nam
+                  i.fas.fa-times
+                  img.float-left(src='../../asset/images/navbar-120k.png')
+                hr
+                p.float-left.mr-5 Tổng số
+                figure
+                  strong  240.000 đ
+                a.btn.btn-dark.custom-btn(name='', href='#', role='button') GIỎ HÀNG
+          form.form-inline.my-2.my-lg-0
+            a.deco-a(href="#")
+             <i class="fas fa-search"></i>
+    nav(aria-label='breadcrumb')
+      ol.breadcrumb.custom-breadcrumb
+        .container
+          .row
+            li.breadcrumb-item
+              a(href='./homev2.html') Home
+            li.breadcrumb-item
+              a Đăng ký
+          hr
+    .container
+      .row.mb-3
+        .col-sm-3.mr-auto
+          h4.para ĐĂNG NHẬP
+        a.btn.btn-dark.custom-btn(name='', id='', href='#', role='button') ĐĂNG KÝ
+    .container
+      .row
+        .col-md-12.pl-0.pr-0.mb-5
+            .form-group.custom-form
+              h6 KHÁCH HÀNG ĐĂNG KÝ
+              p Nếu bạn có một tài khoản xin vui lòng đăng nhập
+              br
+              label(for='') Địa chỉ Email*
+              input.form-control(type='text', name='', id='', aria-describedby='helpId')
+              label(for='') Password*
+              input.form-control.mb-3(type='text', name='', id='', aria-describedby='helpId')
+              br
+              small Quên mật khẩu ?
+              a.btn.btn-dark.custom-btn.ml-4(name='', id='', href='#', role='button') ĐĂNG NHẬP
+    footer
+        .container
+          .row
+            .col-md-4
+              ul.text.list-unstyled.text-muted
+                li
+                  strong LIÊN HỆ VỚI CHÚNG TÔI
+                each info in ['tầng 4, tòa nhà Hanoi Group Số 442 Hàng Giấy, Quận Hoàn Kiếm, Thành phố Hà Nội','(04) 6674 2332 - (04) 5785 2015','(04) 6674 2332 - Tinphamtp@gmail.com']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong CHUYỂN HÀNG
+                each info in ['Mua sắm trực tuyến','Chính sách vận chuyển','Chính sách người dùng','Thông tin vận chuyển']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong HỖ TRỢ
+                each info in ['Our story','Thanh toán an toàn','Thanh toán nhanh', 'Chính sách vận chuyển']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong THÔNG TIN
+                each info in ['Về chúng tôi','Điều khoản & điều kiện','Điều khoản & yêu cầu','Đơn đặt hàng']
+                    li= info
+            .col-md-2
+              ul.text.list-unstyled.text-muted
+                li
+                  strong MY ACCOUNT
+                each key, value in {'./shoppingCart.html':'Giỏ hàng','./account.html':'My account','./resgister.html':'Đăng ký tài khoản','./login.html':'Đăng nhập'}
+                  li
+                    a.text-muted(href= value)= key
+        hr
+        .pay
+          .container
+            .row
+              .col-sm-6
+                p.para.para--pay CopyRight@ 2015 - 2019 | Danang Sun-asterisk
+              .col-6.col-md-3.offset-md-2.offset-lg-3
+                a(href='#')
+                  img.shoppingCart--img(src='../../asset/images/pay.png')
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')

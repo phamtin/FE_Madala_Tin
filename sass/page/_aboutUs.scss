@@ -1,0 +1,6 @@
+.aboutUs{
+    width: 100%;
+    &--img{
+        @include fullsize ;
+    }
+}
